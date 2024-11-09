@@ -85,6 +85,7 @@
 | [mcfx](players/mcfx/readme.md) | 总排名第 1 名 | 全部题目（除 签到、PowerfulShell、ZFS 文件恢复、LESS 文件查看器在线版、新生赛上的零解题） |
 | [梓瑶](players/ziyao233/readme.md) | 被开源指令集冲昏了头脑 | RISC-V：虎胆龙威(1,2) |
 | [MoeMagicMango](players/KoiMeautily/readme.md) | 总排名第 296 名, 很菜（ | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、无法获得的秘密、AI(1) |
+| [Ben "Pig" Chu](players/benpigchu/README.md) | 总排名第 22 名 | 签到、打不开的盒、喜欢做签到的 CTFer 你们好呀、无法获得的秘密、猫咪问答（Hackergame 十周年纪念版）、每日论文太多了！、比大小王、Node.js is Web Scale、PaoluGPT - 千里挑一、PaoluGPT - 窥视未知、旅行照片 4.0、不宽的宽字符、PowerfulShell、强大的正则表达式、惜字如金 3.0 - 题目 A/题目 B、优雅的不等式 - Easy、禁止内卷、零知识数独 - 数独高手/ZK 高手、先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」 - 「行吧就算标题可以很长但是 flag 一定要短点」、关灯 - Easy/Medium/Hard、RISC-V：虎胆龙威 - 警告：易碎 / Fragility/线程故障 / Fault in the Hart、不太分布式的软总线、看不见的彼方：交换空间、链上转账助手 - 转账失败、哈希三碰撞 - 三碰撞之一 |
 
 ## 其他资源
 
