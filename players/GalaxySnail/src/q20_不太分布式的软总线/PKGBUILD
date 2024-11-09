@@ -1,0 +1,37 @@
+pkgname=hackergame2024-dbus
+pkgver=1.0
+pkgrel=1
+pkgdesc="不太分布式的软总线 题目代码"
+url="https://hack.lug.ustc.edu.cn/"
+arch=(x86_64)
+license=(CUSTOM)
+depends=(
+  glib2
+)
+source=("dbus.zip")
+sha256sums=('05320edce90f4fd599e5941ede85615e918c5a0df83fae99495027d4e078c53e')
+
+prepare() {
+  cd src
+  sed -i "s|read_flag(\"/flag.|read_flag(\"/usr/share/$pkgname/flag|g" flagserver.c
+}
+
+build() {
+  cd src
+  make
+  echo hello world > flag
+}
+
+package() {
+  cd src
+  install -d $pkgdir/usr/bin/
+  install -d $pkgdir/usr/share/dbus-1/system-services/
+  install -d $pkgdir/usr/share/dbus-1/system.d/
+  install -d $pkgdir/usr/share/$pkgname/
+
+  install -m 755 getflag3 $pkgdir/usr/bin/getflag3
+  install -m 755 flagserver $pkgdir/usr/bin/flagserver
+  install -m 644 cn.edu.ustc.lug.hack.FlagService.service $pkgdir/usr/share/dbus-1/system-services/
+  install -m 644 cn.edu.ustc.lug.hack.FlagService.conf $pkgdir/usr/share/dbus-1/system.d/
+  install -m 600 flag $pkgdir/usr/share/$pkgname/
+}
