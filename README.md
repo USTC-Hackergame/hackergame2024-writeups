@@ -77,14 +77,16 @@
 | [Rainy](players/Rainy/README.md) | 总排名 197，纯新人 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、零知识数独(1,2)、AI(1) |
 | [CNDY](players/CNDY/README.md) | 只做了签到（ | 签到 |
 | [7086cmd](players/7086cmd/README.md) | 总排名 287，高中菜牲 | 签到、喜欢做签到的 CTFer 你们好呀、打不开的盒、每日论文太多了！、比大小王、Node.js is Web Scale、PaoluGPT、优雅的不等式(1)、动画分享(1) |
-| [Mako #Ciallo～(∠・ω< )⌒★](players/Mako%20%23Ciallo～(∠・ω<%20)⌒★/wp.md) | 总排名 51，大一学生 | 比大小王、不宽的宽字符、PowerfulShell、惜字如金 3.0、无法获得的秘密 |
+| [Mako #Ciallo～(∠・ω< )⌒★](players/Mako%20%23Ciallo～(∠・ω%20)⌒★/wp.md) | 总排名 51，大一学生 | 比大小王、不宽的宽字符、PowerfulShell、惜字如金 3.0、无法获得的秘密 |
 | [芋头 Leohearts](players/Leohearts/readme.md) | 老年选手复健，只做了一天 | 打不开的盒 每日论文太多了！ 比大小王 PowerfulShell Node.js is Web Scale PaoluGPT 无法获得的秘密 Docker for Everyone Plus 动画分享 禁止内卷 链上转账助手 不太分布式的软总线 旅行照片 4.0 猫咪问答 |
 | [Palve](players/Palve/README.md) | 记得交藏在裤裆里的flag! | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、PaoluGPT、Node.js is Web Scale、强大的正则表达式(1)、惜字如金3.0(1)、优雅的不等式(1)、无法获得的秘密、ZFS文件恢复(1)、Docker for Everyone Plus(1)、零知识数独(1) |
-| [weifeng2356](players/weifeng2356/readme.md) | 总排名第 160 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、强大的正则表达式(1)、惜字如金 3.0(1)、优雅的不等式(1)、关灯(1,2,3)、禁止内卷、零知识数独(1) |
+| [weifeng2356](players/weifeng2356/README.md) | 总排名第 160 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、强大的正则表达式(1)、惜字如金 3.0(1)、优雅的不等式(1)、关灯(1,2,3)、禁止内卷、零知识数独(1) |
 | [Cascade Kobayashi](players/Cascade/README.md) | 总排名 64，但是还是太弱小了 | 签到、喜欢做签到、打不开的盒、每日论文太多了！、比大小王、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式 (Easy, Medium)、看不见的彼方、不太分布式的软总线、RISC-V：虎胆龙威 (警告：易碎 / Fragility)、动画分享 (只要不停下...)、关灯 (Easy, Medium, Hard)、禁止内卷、哈希三碰撞 (三碰撞之一) |
 | [mcfx](players/mcfx/readme.md) | 总排名第 1 名 | 全部题目（除 签到、PowerfulShell、ZFS 文件恢复、LESS 文件查看器在线版、新生赛上的零解题） |
 | [梓瑶](players/ziyao233/readme.md) | 被开源指令集冲昏了头脑 | RISC-V：虎胆龙威(1,2) |
 | [MoeMagicMango](players/KoiMeautily/readme.md) | 总排名第 296 名, 很菜（ | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、无法获得的秘密、AI(1) |
+| [LiBr](players/LiBr/README.md) | 总榜第 18 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金3.0、优雅的不等式、无法获得的秘密、Docker for Everyone Plus(1)、链上转账助手(1,2)、不太分布式的软总线(1-3)、动画分享、关灯(1-3)、禁止内卷、零知识数独(1)、神秘代码、LLM(1) |
+| [Ben "Pig" Chu](players/benpigchu/README.md) | 总排名第 22 名 | 签到、打不开的盒、喜欢做签到的 CTFer 你们好呀、无法获得的秘密、猫咪问答（Hackergame 十周年纪念版）、每日论文太多了！、比大小王、Node.js is Web Scale、PaoluGPT - 千里挑一、PaoluGPT - 窥视未知、旅行照片 4.0、不宽的宽字符、PowerfulShell、强大的正则表达式、惜字如金 3.0 - 题目 A/题目 B、优雅的不等式 - Easy、禁止内卷、零知识数独 - 数独高手/ZK 高手、先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」 - 「行吧就算标题可以很长但是 flag 一定要短点」、关灯 - Easy/Medium/Hard、RISC-V：虎胆龙威 - 警告：易碎 / Fragility/线程故障 / Fault in the Hart、不太分布式的软总线、看不见的彼方：交换空间、链上转账助手 - 转账失败、哈希三碰撞 - 三碰撞之一 |
 | [风的影子](players/风的影子/README.md) | 总排名第26 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式（除Hard）、惜字如金 3.0（除题目 C）、优雅的不等式、无法获得的秘密、链上转账助手（除转账再失败）、不太分布式的软总线、动画分享、关灯（除Impossible）、禁止内卷、哈希三碰撞（三碰撞之一）、零知识数独（除无解之谜）、先104🤣」（「行吧就算标题可以很长但是 flag 一定要短点」） |
 
 ## 其他资源
