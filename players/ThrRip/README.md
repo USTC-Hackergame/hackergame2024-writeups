@@ -32,7 +32,7 @@ tput cols
 tput lines
 ```
 
-找到小于 `$(tput cols)` 的最大的 8 的倍数，作为数据显示区域的宽。用 `$(($(tput lines) - 1))` 作为数据显示区域的高（留一行用于显示当前传输的块的编号）。把这两个数填入 (`encode.sh`)[unobtainable-secret/encode.sh] 中的 `_vw` 和 `_vh` 变量，然后运行。当然也可以不保存为脚本文件，直接输入每一行命令并运行。
+找到小于 `$(tput cols)` 的最大的 8 的倍数，作为数据显示区域的宽。用 `$(($(tput lines) - 1))` 作为数据显示区域的高（留一行用于显示当前传输的块的编号）。把这两个数填入 [`encode.sh`](unobtainable-secret/encode.sh) 中的 `_vw` 和 `_vh` 变量，然后运行。当然也可以不保存为脚本文件，直接输入每一行命令并运行。
 
 其中，用 `split` 把 `secret` 分成文件名为 `secret.000`、`secret.001`、……的块。
 
@@ -46,7 +46,7 @@ split -a 3 -b $(($_vw * $_vh / 8)) -d secret secret.
 for c in secret.*; do basenc --base2msbf -w $_vw $c | sed -E 's/0/ /g; s/1/█/g' > $c.txt; done
 ```
 
-使用 (`send.sh`)[unobtainable-secret/send.sh] 在一个绝对的时间点开始发送（显示），并按设置的固定间隔切换到下一块。在接收端也使用同样的设置，就可以实时发送和接收。
+使用 [`send.sh`](unobtainable-secret/send.sh) 在一个绝对的时间点开始发送（显示），并按设置的固定间隔切换到下一块。在接收端也使用同样的设置，就可以实时发送和接收。
 
 ```bash
 # The second in the current minute to start
@@ -71,7 +71,7 @@ for c in secret.*.txt; do clear; cat $c; echo -n $c; sleep $_i; done
 > pnpm run preview
 > ```
 >
-> 如果需要编辑代码后在浏览器中实时更新，可以使用 `pnpm run dev`。需要注意 `unobtainable-secret/decode/` 目录下的所有文件均使用 (Mozilla Public License version 2.0)[https://www.mozilla.org/en-US/MPL/2.0/] (MPL 2.0) 许可，不同于此存储库主要使用的[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)，详见本文的[许可](#许可)部分。
+> 如果需要编辑代码后在浏览器中实时更新，可以使用 `pnpm run dev`。需要注意 `unobtainable-secret/decode/` 目录下的所有文件均使用 [Mozilla Public License version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)（MPL 2.0）许可，不同于此存储库主要使用的[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)，详见本文的[许可](#许可)部分。
 
 有一个很酷的 UI。
 
@@ -93,4 +93,4 @@ for c in secret.*.txt; do clear; cat $c; echo -n $c; sleep $_i; done
 
 ## 许可
 
-本仓库 `/players/ThrRip/unobtainable-secret/decode/` 目录下的所有文件基于 (Mozilla Public License version 2.0)[https://www.mozilla.org/en-US/MPL/2.0/] (MPL 2.0) 许可发布。
+本仓库 `/players/ThrRip/unobtainable-secret/decode/` 目录下的所有文件基于 [Mozilla Public License version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)（MPL 2.0）许可发布。
