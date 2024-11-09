@@ -1,5 +1,7 @@
 ## Hackergame2024 WP
 
+见[blog](https://blog.palve.moe/2024/11/Hackergame2024_writeups/)
+
 ### ~~废话~~
 
 今年的 Hackergame 鸽了，撞上了强网，~~被打的找不到北~~。按照惯例，今年也简单的做一下吧
