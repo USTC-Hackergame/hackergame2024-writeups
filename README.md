@@ -66,6 +66,7 @@
 | [MadCroiX](players/madcroix) | 总排名 61 名| 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、无法获得的秘密、禁止内卷、动画分享(1)、强大的正则表达式(2)、优雅的不等式(1) |
 | [凌六](players/zero6six/README.md) | 总排名第 363 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、PaoluGPT-千里挑一、惜字如金 3.0-题目 A、无法获得的秘密 |
 | [YUKI.N](players/YUKI.N/README.md) | 总排名第 4 名 | PowerfulShell、强大的正则表达式、无法获得的秘密、Docker for Everyone Plus、动画分享、神秘代码 2、「<\|这里原本是超长的题目名字\|>」 |
+| [himalalps](players/himalalps/README.md) | 一般通过 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了、比大小王、旅行照片 4.0、PaoluGPT (千里挑一)、强大的正则表达式 (Easy, Medium)、惜字如金 3.0 (题目 A)、优雅的不等式 (Easy)、关灯 (Easy, Medium, Hard)、零知识数独 (数独高手)、AI (1) |
 
 ## 其他资源
 
