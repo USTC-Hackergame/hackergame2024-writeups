@@ -40,7 +40,7 @@ tput lines
 split -a 3 -b $(($_vw * $_vh / 8)) -d secret secret.
 ```
 
-然后用 `basenc` 把每块转为用 `0` 和 `1` 表示的二进制位，然后把 `0` 替换为空格，把 `1` 替换为 `█`，转换后保存为 `secret.000.txt`、`secret.001.txt` 等文件。
+然后用 `basenc` 把每块转为用 `0` 和 `1` 表示的二进制位，用 `sed` 把 `0` 替换为空格，把 `1` 替换为 `█`，转换后保存为 `secret.000.txt`、`secret.001.txt` 等文件。
 
 ```bash
 for c in secret.*; do basenc --base2msbf -w $_vw $c | sed -E 's/0/ /g; s/1/█/g' > $c.txt; done
@@ -89,7 +89,7 @@ for c in secret.*.txt; do clear; cat $c; echo -n $c; sleep $_i; done
 > ```
 
 > [!NOTE]
-> 根据我的测试，Chromium 的 Canvas API 性能非常低。接收端读取每一块的时刻，是在每块显示间隔之间的中间点，这样能确保网络抖动带来的影响变得最小。在 Firefox 中可以把间隔（_Read and decode every ...ms_ 以及 `send.sh` 的 `$_i`）设置为 1 秒，但是在 Chromium 中必须设置为至少 4 秒，否则无法正常连续读取每一块。
+> 根据我的测试，Chromium 的 Canvas API 性能非常低。接收端读取每一块的时刻，是在每块显示间隔之间的中间点，这样能确保网络抖动带来的影响变得最小。在 Firefox 中可以把间隔（_Read and decode every ...ms_ 以及 `send.sh` 的 `$_i`）设置为 1 秒，但是在 Chromium 中必须设置为至少 4 秒，否则无法在指定时间内处理完每块的内容。
 
 ## 许可
 
