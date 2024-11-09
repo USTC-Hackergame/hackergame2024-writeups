@@ -94,6 +94,7 @@
 | [Ishisashi](players/Ishisashi/memo.md) | 总排名第 34 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金 3.0、优雅的不等式、无法获得的秘密、ZFS 文件恢复、链上转账助手（仅 1）、不太分布式的软总线（仅 1）、关灯（仅 1·2·3）、禁止内卷、零知识数独（仅 1·2）、AI（仅 1） |
 | [Mivik](players/mivik/README.md) | 总排名第 5 名 | 每日论文太多了！、旅行照片 4.0、不宽的宽字符、PowerfulShell、惜字如金 3.0、优雅的不等式、无法获得的秘密、关灯、图灵完备的浮点数减法、零知识数独、名字太长的 LLM |
 | [WesKwong](players/WesKwong/README.md) | 总排名第 371 名，大学四年每年都参加，最后这一年来交一下wp罢 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT |
+| [Purofle](players/purofle/README.md) | 总排名第 167 名，高三没时间打，好可惜 | 签到，喜欢做签到的 CTFer 你们好呀，猫咪问答（Hackergame 十周年纪念版），打不开的盒，比大小王，旅行照片 4.0，PaoluGPT，链上转账助手（转账失败，转账又失败），不太分布式的软总线，零知识数独（数独高手） |
 
 ## 其他资源
 
