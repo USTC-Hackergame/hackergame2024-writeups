@@ -38,7 +38,7 @@ Xcode 打开看了看就搞定了
 
 点进论文，直接搜 `flag` 结果找到东西：
 
-![QQ_1731147155436](/Users/ethangoh/Developer/hackergame2024-writeups/players/7086cmd/assets/QQ_1731147155436.png)
+![QQ_1731147155436](./assets/QQ_1731147155436.png)
 
 找到那里，然后把东西滑下来，搞定。
 
