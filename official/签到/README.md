@@ -63,3 +63,42 @@ document.querySelectorAll('.input-box').forEach(input => {
 本题的音乐、歌词基于游戏《沙威玛传奇（Shawarma Legend）》中文主题曲改编，由 Suno AI 制作。
 
 音乐文件：[Hackergame.mp3](files/Hackergame.mp3)
+
+歌词：
+
+```
+[Verse]
+Hackergame 哦 Hackergame 哦 Hackergame
+有了你 生活美好 没烦恼
+Hackergame传奇 奇妙至极
+最棒比赛 人人赞叹你
+
+[Chorus]
+嗯嗯嗯嗯嗯 Hackergame比赛 群英齐聚
+Hackergame称霸 思路不止
+最棒比赛 最妙体验
+欢呼此时！
+
+[Verse 2]
+如果卡关 那可不对
+今晚没拿 flag 我就会吼叫
+无论白天 还是夜晚
+Hackergame的挑战 让头脑清醒
+
+[Chorus]
+嗯嗯嗯嗯嗯 Hackergame比赛 群英齐聚
+Hackergame称霸 思路不止
+最棒比赛 最妙体验
+欢呼此时！
+
+[Bridge]
+在酷暑或寒冬 Hackergame的魅力
+让热情浓 让热情浓
+解题如梦 像中大奖的狂喜
+
+[Chorus]
+嗯嗯嗯嗯嗯 Hackergame哦 Hackergame哦 Hackergame
+最棒比赛 最妙体验
+欢呼此时！
+```
+
