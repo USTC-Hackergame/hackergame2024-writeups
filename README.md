@@ -92,6 +92,7 @@
 | [1xx55](players/1xx55/README.md) | 总排名 128 名 | 签到、比大小王、打不开的盒、PaoluGPT、惜字如金3.0(题目A)、旅行照片4.0、优雅的不等式、PowerfulShell、每日论文太多了！、零知识数独（1）、AI(1)、喜欢做签到的 CTFer 你们好呀（1）、Node.js is Web Scale、强大的正则表达式、关灯（Eazy-Hard）、不太分布式的软总线（1）
 | [三咲智子 @sxzz](players/sxzz/README.md) | 总排名 39 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale（未完待续）|
 | [Ishisashi](players/Ishisashi/memo.md) | 总排名第 34 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金 3.0、优雅的不等式、无法获得的秘密、ZFS 文件恢复、链上转账助手（仅 1）、不太分布式的软总线（仅 1）、关灯（仅 1·2·3）、禁止内卷、零知识数独（仅 1·2）、AI（仅 1） |
+| [WesKwong](players/WesKwong/README.md) | 总排名第 371 名，大学四年每年都参加，最后这一年来交一下wp罢 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT |
 
 ## 其他资源
 
