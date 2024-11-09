@@ -1,0 +1,30 @@
+gcc好像有bug，可能结果有错
+
+clang -O3 generate.c
+得到matrix
+同时对matrix消元得到A和A_1以及ignore.txt
+
+python3 test.py
+检查A矩阵是否符合预期
+
+python3 filter.py
+根据matrix和ignore.txt得到matrix2
+
+clang -O3 inverse.c
+从matrix2重新计算逆矩阵，得到inverse
+
+clang -O3 check_inverse.txt
+检查矩阵正确性
+
+clang -O3 hinter.c -o hinter
+编译hinter，利用inverse快速求解
+
+solve.py
+
+c5c6151099898141278e20a74540b1cadf1ab09232f815e798c536c4358eaa8a  A
+657f5203a70b98d47ff88a4a6bca988c628637dcf34666ef7654432b28625bdf  A_1
+5e09943432f664cdfc8a420cce5e64a4cdcd5f6a81e8fd7b15b101b6a769b08b  ignore.txt
+c950097494a66eba12de7087137126fb0d445b95ef441137a0e62205fd6308e8  inverse
+8428a0bddd89b235f161c1b9e123dcf51a9e9a3328e040fb7ed95777da37504c  matrix
+d7fcd34cdd4d9c7934c9fd81953d6aee7191e8df1f2356c8834fdd0027c41e88  matrix2
+8428a0bddd89b235f161c1b9e123dcf51a9e9a3328e040fb7ed95777da37504c  matrix_clang
