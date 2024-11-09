@@ -98,6 +98,7 @@
 | [ranwen](players/ranwen/2024-11-04-hackergame24.md) | 总排名第 2 名 | 全部题目（除新生赛上的零解题、认证恢复码、cat 绿色破解版） |
 | [莉特雅literal](players/莉特雅literal/README.md) | 总排名 123 名，第一次参加，很紧张 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、惜字如金 3.0、无法获得的秘密、ZFS 文件恢复、不太分布式的软总线、RISC-V：虎胆龙威 (2) |
 | [Purofle](players/purofle/README.md) | 总排名第 167 名，高三没时间打，好可惜 | 签到，喜欢做签到的 CTFer 你们好呀，猫咪问答（Hackergame 十周年纪念版），打不开的盒，比大小王，旅行照片 4.0，PaoluGPT，链上转账助手（转账失败，转账又失败），不太分布式的软总线，零知识数独（数独高手） |
+| [ThrRip](players/ThrRip/README.md) | 总排名第 239 名（第一次打 CTF） | 无法获得的秘密（包含[本仓库唯一的 `.vue` 文件](https://github.com/search?q=repo%3AUSTC-Hackergame%2Fhackergame2024-writeups+language%3AVue&type=code)） |
 
 ## 其他资源
 
