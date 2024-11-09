@@ -1089,6 +1089,10 @@ int main(void) {
 于是重新开新坑，用原版 `socket` 写，写到一半不想写了去玩游戏了。其实可能也可以用 python (我甚至没去看环境里有没有)，想起来的时候已经不想玩了～
 
 
+## 附录
+
+如需找我聊天，可以去 [我的博客上的该页面](https://leohearts.com/archives/hackergame_2024.html) 评论
+
   [1]: ./assets//4046521366.webp
   [2]: ./assets//281655009.webp
   [3]: ./assets//4046521366.webp
