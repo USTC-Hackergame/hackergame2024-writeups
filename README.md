@@ -95,6 +95,7 @@
 | [Mivik](players/mivik/README.md) | 总排名第 5 名 | 每日论文太多了！、旅行照片 4.0、不宽的宽字符、PowerfulShell、惜字如金 3.0、优雅的不等式、无法获得的秘密、关灯、图灵完备的浮点数减法、零知识数独、名字太长的 LLM |
 | [WesKwong](players/WesKwong/README.md) | 总排名第 371 名，大学四年每年都参加，最后这一年来交一下wp罢 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT |
 | [逆天域Intary](players/intary/README.md) | 总排名 105 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、不太分布式的软总线、禁止内卷|
+| [莉特雅literal](players/莉特雅literal/README.md) | 总排名 123 名，第一次参加，很紧张 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、惜字如金 3.0、无法获得的秘密、ZFS 文件恢复、不太分布式的软总线、RISC-V：虎胆龙威 |
 
 ## 其他资源
 
