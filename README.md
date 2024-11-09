@@ -84,7 +84,7 @@
 
 [Hackergame 2024 幕后工作人员](https://hack.lug.ustc.edu.cn/credits/)
 
-[搞笑 Flag & 花絮（暂缺）](./behind-the-scenes/README.md)
+[搞笑 Flag & 花絮](./behind-the-scenes/README.md)
 
 ### 历年题解
 
