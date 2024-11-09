@@ -60,6 +60,7 @@
 | write-up | 备注 | 包含题目 |
 | - | - | - |
 | [样例](players/example/README.md) | 样例，供参考 | 签到 |
+| [PRO-2684](players/PRO-2684/README.md) | 菜菜 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、比大小王、打不开的盒、每日论文太多了！、旅行照片 4.0 (1&2)、PaoluGPT、惜字如金 3.0 (1)、Node.js is Web Scale、强大的正则表达式 (1&2)、禁止内卷、零知识数独 (1) |
 
 ## 其他资源
 
