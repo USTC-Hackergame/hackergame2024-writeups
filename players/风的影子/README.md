@@ -1,17 +1,3 @@
----
-title: Hackergame 2024 题解（一）
-disableNunjucks: false
-mathjax: false
-id: 12160
-date: 2024-11-09 13:10:22
-categories: 
-  - CTF题解
-tags:
-  - Hackergame
-  - Hackergame 2023
-cover:
----
-
 本题解也将同步于我的[个人博客](https://blog.fyz666.xyz/blog/12095/)
 
 ## 签到
