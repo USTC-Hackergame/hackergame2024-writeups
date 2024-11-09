@@ -248,7 +248,7 @@ print("saved to output.txt")
 
 ```
 
-![image-20241103113028472](../../assets/img/image-20241103113028472.png)
+![image-20241103113028472](image-20241103113028472.png)
 
 为什么不是114154行 （😡
 
@@ -268,7 +268,7 @@ sqlmap -u "https://chal01-yh8m6qof.hack-challenge.lug.ustc.edu.cn:8443/view?conv
 
 对应的文章的uuid应该是`24052425-8f7e-4e97-bdc5-b10f13d9538d` `请详细解释以下名词： 水产养殖业中的现状`
 
-![image-20241103115531851](../../assets/img/image-20241103115531851.png)
+![image-20241103115531851](image-20241103115531851.png)
 
 ### Node.js is Web Scale（藏裤裆的flag
 
