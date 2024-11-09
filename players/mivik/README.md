@@ -3,13 +3,6 @@ HG 偶遇期中周，拼尽全力无法战胜
 
 [欢迎到我的博客阅读](https://mivik.moe/2024/solution/hackergame2024/)
 
-{% raw %}
-<style type="text/css">
-.heimu { color: #000; background-color: #000; }
-.heimu:hover { color: #fff; }
-</style>
-{% endraw %}
-
 期中周能抽出时间打比赛也是厉害。
 
 总体感觉比上一次要有趣一些，几个 binary 题目自己完全没动力去整就搁置了。这篇 writeup 也是在这种赶工的心态下写的所以请多包涵。
@@ -40,7 +33,7 @@ pdfcpu extract --mode image 3650212.3652145.pdf output
 
 不用 UTF-8 的皆为异端。[UTF-8 Everywhere](https://utf8everywhere.org/)
 
-{% codeblock gen.cpp lang:cpp %}
+```cpp
 #include <cctype>
 #include <cstdint>
 #include <fstream>
@@ -71,7 +64,7 @@ int main() {
   fclose(fp);
   return 0;
 }
-{% endcodeblock %}
+```
 
 这里加了一些 padding 来保证刚好能塞进去。
 
@@ -128,7 +121,7 @@ ${_:0:1}386
 
 ![嘟嘟哒嘟嘟哒](img/secret.png)
 
-{% codeblock exp.py lang:python %}
+```python
 import sys
 from time import sleep
 with open('/secret', 'rb') as f: data = f.read()
@@ -146,11 +139,11 @@ def one(i, data):
 
 
 for i in range(0, len(data), n): cls(), one(i,data[i:min(len(data),i+n)])
-{% endcodeblock %}
+```
 
 下面是解码
 
-{% codeblock main.rs lang:rust >folded %}
+```rust
 use std::path::Path;
 
 use anyhow::Result;
@@ -229,7 +222,7 @@ fn main() -> Result<()> {
 
     Ok(())
 }
-{% endcodeblock %}
+```
 
 哎 Rust 批闻着味儿就来了。
 
@@ -272,7 +265,7 @@ $O(n^{3/\log n})$，我寻思这不恒等于 $O(e^3)$ 吗？常数复杂度高�
 
 无论如何实测跑得飞快。可以直接把矩阵预处理出来，然后根据输入算一下系数，最后高斯消元即可。
 
-{% codeblock solve.cpp lang:cpp >folded %}
+```cpp
 #include <bitset>
 #include <cassert>
 #include <cstring>
@@ -364,7 +357,7 @@ int main() {
   }
   puts("");
 }
-{% endcodeblock %}
+```
 
 ## 图灵完备的浮点数减法
 
@@ -372,7 +365,6 @@ int main() {
 
 本质上就是考虑溢出，你可以构造出两个函数使得：
 
-{% raw %}
 $$
 f_k (x)=x-f_{1k}-f_{2k}=\begin{cases}
 0 & 0\le x<2^k,\\
@@ -383,11 +375,10 @@ g_k (x)=x-g_{1k}-g_{2k}=\begin{cases}
 x^k & x=2^{k+1}
 \end{cases}
 $$
-{% endraw %}
 
 然后就能干很多事情啦！怎么找常数？当然是 z3 啦！
 
-{% codeblock exp.py lang:python %}
+```python
 from z3 import *
 import struct
 
@@ -422,11 +413,11 @@ for k in range(0, 9):
             print(f'{k}: {tof(v):.20f}')
     else:
         print("unsat")
-{% endcodeblock %}
+```
 
 然后最后生成代码的代码：
 
-{% codeblock gen.py lang:python >folded %}
+```python
 DEBUG = False
 pc = 32
 
@@ -745,7 +736,7 @@ for i in range(8):
 result = [BitVec(i).scalar() for i in result]
 for i in result:
     i.back()
-{% endcodeblock %}
+```
 
 ## 零知识数独
 
@@ -759,7 +750,7 @@ DFS！DFS？DFS！！！！DFS！！
 
 可能因为运气比较好，写出来几遍就过了，CPU 上完整跑一次只需要两分钟。
 
-{% codeblock exp.py lang:python >folded %}
+```python
 from llama_cpp import Llama
 import llama_cpp.llama_chat_format as llama_chat_format
 
@@ -867,4 +858,4 @@ while True:
         if len(output) >= len(s):
             quit()
         alter_cur.append(0)
-{% endcodeblock %}
+```
