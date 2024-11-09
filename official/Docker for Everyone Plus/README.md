@@ -56,7 +56,7 @@ RUN apk add --no-cache su-exec && \
 然后将该镜像导出后使用 ZModem 上传至环境，执行 `sudo docker image load` 导入，最后执行并把主机 `/` 挂入容器，提权即可获得 flag。
 
 ```sh
-docker run --rm -u 1000:1000 -it -v /:/host:ro (image name)
+docker run --rm -u 1000:1000 -it --privileged -v /:/host:ro (image name)
 exec su-exec root /bin/ash
 cat /host/flag
 ```
@@ -95,3 +95,7 @@ RUN mknod /flag b 253 16 && \
 至于 Windows 用户，我也不知道咋上传。
 
 因为工期比较紧张，所以最后用了 ZMODEM 这种比较低效的方法处理，网页 nc 也没有做相关的逻辑。之后如果还有 ZMODEM 的题目的话可能会考虑做一下网页端的处理，当然更有可能是用更加正常的协议来做文件上传。
+
+@RTXUX (2024-11-09):
+
+今天比赛结束后看到可以用 `--security-opt=no-new-privileges:false` 来绕过第二小问的限制，感觉当头一棒。其实赛前我草草看了一眼 [Docker CLI 的源码](https://github.com/docker/cli/blob/917d2dc837673ba6426ff72cabd53325028be809/cli/command/container/opts.go#L918)，认为解析 `--security-opt` 的部分会跳过对 `no-new-privileges` 值的解析，以为这个选项不能被覆盖，今天仔细重新看了一下这段代码，才理解了它的意思是 `no-new-privileges` 不需要值，但指定它的值也可以覆盖，导致了非预期解，再次印证了上面那句话「这种方案要处理的 corner case 很多，难以正确实现」。
