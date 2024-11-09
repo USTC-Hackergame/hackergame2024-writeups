@@ -74,7 +74,7 @@
 | [綾瀬桃桃](players/Momoko-Ayase/README.md) | 废物一个 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）(1,2,3)、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT(1)、惜字如金 3.0(1)、先不说关于我...啊吧啊吧(1) |
 | [夏和小](players/夏和小/README.md) | 总排名第 29 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、每日论文太多了！、比大小王、PowerfullShell、PaoluGPT、强大的正则表达式(3)、惜字如金3.0(B)、优雅的不等式(1,2)、不太分布式的软总线(1,2,3)、动画分享(1)、关灯(1,2,3)、禁止内卷、神秘代码2(1)、AI(1,2) |
 | [Jemmy](players/Jemmy/README.md) | 总排名第 8 名 | 比大小王、不宽的宽字符、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金、优雅的不等式、无法获得的秘密、Docker for Everyone Plus、看不见的彼方、ZFS 文件恢复、不太分布式的软总线、RISC-V：虎胆龙威、关灯、禁止内卷、零知识数独 |
-| [Rainy](players/Rainy/README.md) | 总排名 197，纯新人 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、零知识数独(1,2)、AI(1) |
+| [Rainy](players/Rainy/README.md) | 总排名 197，纯大一新人 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、零知识数独(1,2)、AI(1) |
 | [CNDY](players/CNDY/README.md) | 只做了签到（ | 签到 |
 | [7086cmd](players/7086cmd/README.md) | 总排名 287，高中菜牲 | 签到、喜欢做签到的 CTFer 你们好呀、打不开的盒、每日论文太多了！、比大小王、Node.js is Web Scale、PaoluGPT、优雅的不等式(1)、动画分享(1) |
 | [Mako #Ciallo～(∠・ω< )⌒★](players/Mako%20%23Ciallo～(∠・ω%20)⌒★/wp.md) | 总排名 51，大一学生 | 比大小王、不宽的宽字符、PowerfulShell、惜字如金 3.0、无法获得的秘密 |
