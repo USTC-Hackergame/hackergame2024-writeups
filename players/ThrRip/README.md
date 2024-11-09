@@ -71,7 +71,7 @@ for c in secret.*.txt; do clear; cat $c; echo -n $c; sleep $_i; done
 > pnpm run preview
 > ```
 >
-> 如果需要编辑代码后在浏览器中实时更新，可以使用 `pnpm run dev`。需要注意 `unobtainable-secret/decode/` 目录下的所有文件均使用 (Mozilla Public License version 2.0)[https://www.mozilla.org/en-US/MPL/2.0/]（MPL 2.0）许可，不同于此存储库主要使用的[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)，详见本文的[许可](#许可)部分。
+> 如果需要编辑代码后在浏览器中实时更新，可以使用 `pnpm run dev`。需要注意 `unobtainable-secret/decode/` 目录下的所有文件均使用 (Mozilla Public License version 2.0)[https://www.mozilla.org/en-US/MPL/2.0/] (MPL 2.0) 许可，不同于此存储库主要使用的[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)，详见本文的[许可](#许可)部分。
 
 有一个很酷的 UI。
 
@@ -93,4 +93,4 @@ for c in secret.*.txt; do clear; cat $c; echo -n $c; sleep $_i; done
 
 ## 许可
 
-本仓库 `/players/ThrRip/unobtainable-secret/decode/` 目录下的所有文件基于 (Mozilla Public License version 2.0)[https://www.mozilla.org/en-US/MPL/2.0/]（MPL 2.0）许可发布。
+本仓库 `/players/ThrRip/unobtainable-secret/decode/` 目录下的所有文件基于 (Mozilla Public License version 2.0)[https://www.mozilla.org/en-US/MPL/2.0/] (MPL 2.0) 许可发布。
