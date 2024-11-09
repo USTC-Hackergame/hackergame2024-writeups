@@ -153,7 +153,7 @@ t = [j for i in double_t for j in (i // 2, i // 2 + (1 << 47)) if (u2 * j * j + 
 
 ### 题目 C
 
-题目 C 在题目 B 的基础上修改了第 20 行，使得 `u2, u1, u0` 分别为 `0xDFFFFFFFFFFF, 0xFFFFFFFFFFFF, 0xFFFFFFFFFFFF`，而被「惜字如金化」的全部为 `F` 或 `f` 字符，可能的情况共有 `1 << 32` 种，每一种均需通过向服务端发送请求拿到结果，选手是根本无法推测出来的：
+题目 C 在题目 B 的基础上修改了第 20 行，使得 `u2, u1, u0` 分别为 `0xDFFFFFFFFFFF, 0xFFFFFFFFFFFF, 0xFFFFFFFFFFFF`，而被「惜字如金化」的全部为 `F` 或 `f` 字符，可能的情况共有 `1 << 32` 种，每一种均需通过向服务端发送请求方可确认是否正确，因此选手是根本无法推测出来的：
 
 ```python
     # 以下均为第 20 行可能的情况
@@ -188,22 +188,22 @@ t = [j for i in double_t for j in (i // 2, i // 2 + (1 << 47)) if (u2 * j * j + 
 
 > `s(x) * p(x) + t(x) * q(x) = gcd(p(x), q(x)) = 1`
 
-这一等式呢？通过 `sympy.polys.galoistools` 的 `gf_gcdex`（扩展欧几里得算法）可以计算得到
+这一等式呢？通过 `sympy.polys.galoistools` 的 `gf_gcdex`（扩展欧几里得算法）可以计算得到 `s(x)` 和 `t(x)` 的值：
 
 ```python
 from sympy import ZZ
 from sympy.polys.galoistools import gf_gcdex
 
-p = ZZ.map([1, 0, 0, 0, 1, 1, 0, 1, 0,
-               0, 0, 1, 1, 1, 1, 0, 1,
-               1, 0, 0, 1, 1, 0, 0, 0,
-               0, 1, 0, 0, 1, 0, 1, 1,
-               1, 0, 1, 1, 1, 1, 1, 1,
-               1, 0, 0, 1, 1, 1, 1, 1])
+px = ZZ.map([1, 0, 0, 0, 1, 1, 0, 1, 0,
+                0, 0, 1, 1, 1, 1, 0, 1,
+                1, 0, 0, 1, 1, 0, 0, 0,
+                0, 1, 0, 0, 1, 0, 1, 1,
+                1, 0, 1, 1, 1, 1, 1, 1,
+                1, 0, 0, 1, 1, 1, 1, 1])
 
-q = [ZZ(1)] + [ZZ(0)] * 504 # 考虑 8n - 8m + 48 = 504 的情况
+qx = [ZZ(1)] + [ZZ(0)] * 504 # 考虑 8n - 8m + 48 = 504 的情况
 
-s, t, gcd = gf_gcdex(p, q, 2, ZZ)
+sx, tx, gcd = gf_gcdex(px, qx, 2, ZZ)
 ```
 
 我们只需要用到 `t(x)` 的表达式：
@@ -212,12 +212,58 @@ s, t, gcd = gf_gcdex(p, q, 2, ZZ)
 
 现在我们将构造流程描述如下：
 
-1. 考虑长度为 `n` 字节的输入，计算对应的多项式，舍去不低于 `8n - 8m + 48` 次的部分，记为 `n'(x)`；
+1. 考虑长度为 `n` 字节的输入，计算对应的多项式，舍去不低于 `8n - 8m + 48` 次的部分，记为 `n₀(x)`；
 2. 考虑 `p(x)` 和 `q(x)`，通过以上方法计算得到 `t(x)`；
 3. 选取最高次项低于 `8m - 48` 次的任意多项式 `u(x)`（共有 `1 << (8m - 48)` 种可供选择）；
-4. 考虑期望的余式 `r(x)`，计算 `m(x) = (u(x) * p(x) + r(x) - n'(x)) * t(x)`；
-5. 计算 `n(x) = mod(m(x), p(x)) * q(x) + n'(x)`，不难验证 `mod(n(x), p(x)) = r(x)`，且 `n(x)` 低次项和 `n'(x)` 相同；
+4. 考虑期望的余式 `r(x)`，计算 `m(x) = mod((r(x) - n₀(x)) * t(x), p(x))`；
+5. 计算 `n(x) = n(x) = (u(x) * p(x) + m(x)) * q(x) + n₀(x)`，不难验证 `mod(n(x), p(x)) = r(x)`，且 `n(x)` 低次项和 `n₀(x)` 相同；
 6. 通过 `n(x)` 反推回 `n` 字节的输入，可以验证仅有前 `m` 字节发生了变化，且 CRC 结果和 `r(x)` 对应。
+
+构造流程的示例代码如下：
+
+```python
+from sympy import ZZ
+from sympy.polys.galoistools import gf_add, gf_gcdex, gf_mul, gf_rem, gf_sub
+
+px = ZZ.map([1, 0, 0, 0, 1, 1, 0, 1, 0,
+                0, 0, 1, 1, 1, 1, 0, 1,
+                1, 0, 0, 1, 1, 0, 0, 0,
+                0, 1, 0, 0, 1, 0, 1, 1,
+                1, 0, 1, 1, 1, 1, 1, 1,
+                1, 0, 0, 1, 1, 1, 1, 1])
+
+rx = ZZ.map([0, 1, 0, 1, 0, 1, 0, 1,
+             1, 1, 1, 1, 0, 0, 1, 1,
+             1, 1, 0, 0, 1, 1, 1, 1,
+             0, 0, 0, 1, 0, 0, 1, 1,
+             0, 1, 0, 0, 0, 0, 0, 0,
+             0, 0, 1, 0, 0, 0, 1, 0])
+
+def make_collision(input: bytes, n: int, m: int) -> bytes | None:
+    assert len(input) == n and m >= 6
+    # n₀(x) from input
+    int_input = int.from_bytes(input, 'little')
+    int_input = (int_input | (0xFFFFFFFFFFFF << (8 * n))) ^ 0xFFFFFFFFFFFF
+    n0x = [ZZ((int_input >> j) & 1) for j in range(8 * m, 8 * n + 48)]
+    # q(x) = x ** (8n - 8m + 48)
+    qx = [ZZ(1)] + [ZZ(0)] * (8 * n - 8 * m + 48)
+    # s(x), t(x), gcd(p(x), q(x))
+    sx, tx, gcd = gf_gcdex(px, qx, 2, ZZ)
+    # m(x) = mod((r(x) - n₀(x)) * t(x), p(x))
+    mx = gf_rem(gf_mul(gf_sub(rx, n0x, 2, ZZ), tx, 2, ZZ), px, 2, ZZ)
+    for i in range(2 ** (8 * m - 48)):
+        # u(x): any polynomial whose highest factor is lower than 8m - 48
+        ux = [ZZ((i >> j) & 1) for j in range(8 * m - 48)]
+        # n(x) = (u(x) * p(x) + m(x)) * q(x) + n₀(x)
+        nx = gf_add(gf_mul(gf_add(gf_mul(ux, px, 2, ZZ), mx, 2, ZZ), qx, 2, ZZ), n0x, 2, ZZ)
+        # output from n(x)
+        int_output = sum(int(nx[j]) << (8 * n + 48 + j - len(nx)) for j in range(len(nx)))
+        int_output = (int_output & ~(0xFFFFFFFFFFFF << (8 * n))) ^ 0xFFFFFFFFFFFF
+        output = int_output.to_bytes(n, 'little')
+        if b'\r' not in output and b'\n' not in output:
+            return output
+    return None
+```
 
 实际构造时可以选取 `m = 7`，这是因为如果选取 `m = 6`，则构造得到的输入可能会存在 `\r` 或 `\n`，而 `u(x)` 只能选取为 `0`，选取 `m = 7` 可以使得 `u(x)` 有多达 256 种选择，规避掉 `\r` 或 `\n` 的产生。`answer_c.txt` 的第七个字节可以通过穷举 85 种情况得到（只有一种情况会使得解码得到的 flag 全部为 ASCII 可见字符）。
 
