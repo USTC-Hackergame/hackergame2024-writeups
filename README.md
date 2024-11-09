@@ -70,7 +70,7 @@
 | [妈船](players/妈船) | 总排名 210 | 签到,喜欢做签到的 CTFer 你们好呀,猫咪问答（Hackergame 十周年纪念版）,打不开的盒,每日论文太多了！,比大小王,旅行照片 4.0,PowerfulShell,Node.js is Web Scale,PaoluGPT,惜字如金3.0(1),关灯(1,2,3),零知识数独(1) |
 | [sparkcyf](players/sparkcyf) | 总排名 42 | PaoluGPT, 强大的正则表达式(1,2), 无法获得的秘密（利用`noVNC_keyboardinput`快速输入复杂程序）, Docker for Everyone Plus(1), ZFS 文件恢复(1,2), 禁止内卷, 不太分布式的软总线(LLM Zero-shot完成全部小问), 关灯, 零知识数独(1,2), AI(1)|
 | [wuhang2003](players/wuhang2003/README.md) | 总排名第 370 名的新手 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、PaoluGPT-千里挑一、惜字如金 3.0-题目 A、零知识数独-数独高手和 ZK 高手 |
-| [夏和小](players/夏和小/README.md) | 总排名第 29名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、每日论文太多了！、比大小王、PowerfullShell、PaoluGPT、强大的正则表达式(3)、惜字如金3.0(B)、优雅的不等式(1,2)、不太分布式的软总线(1,2,3)、动画分享(1)、关灯(1,2,3)、禁止内卷、神秘代码2(1)、AI(1,2) |
+| [夏和小](players/夏和小/README.md) | 总排名第 29 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、每日论文太多了！、比大小王、PowerfullShell、PaoluGPT、强大的正则表达式(3)、惜字如金3.0(B)、优雅的不等式(1,2)、不太分布式的软总线(1,2,3)、动画分享(1)、关灯(1,2,3)、禁止内卷、神秘代码2(1)、AI(1,2) |
 
 ## 其他资源
 
