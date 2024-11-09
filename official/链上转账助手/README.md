@@ -59,6 +59,8 @@ contract Receiver {
 }
 ```
 
+**这里补充一下，使用一个空的 Solidity 合约代码也是可以通过的，因为不写 receive 函数的话，默认的行为就是，收到转账的时候会回滚。**
+
 至于如何把智能合约编译成题目要求输入的字节码，你可以参考题目附件提供的 `compile.py`，也可以在 [Remix IDE](https://remix.ethereum.org/) 编译后点击复制 Bytecode 的按钮。
 
 ### 转账又失败
