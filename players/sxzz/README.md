@@ -537,7 +537,7 @@ print(lego.from_fsm(dfa))
 
 ### 小菜一碟
 
-我们需要在最小利用资源的情况下下，把 `/home/pwn/A/space/file` 和 `/home/pwn/B/space/file` 交换，所以我这里使用 Rust 来写这个程序。虽然限制了 `chroot`，但我们可以通过 TCP 连接来实现通讯。
+我们需要在最小利用资源的情况下，把 `/home/pwn/A/space/file` 和 `/home/pwn/B/space/file` 交换，所以我这里使用 Rust 来写这个程序。虽然限制了 `chroot`，但我们可以通过 TCP 连接来实现通讯。
 
 考虑到硬盘空间实际上用的是内存，我们不能同时持有两个文件和两个文件的副本。所以 Alice 和 Bob 都需要一边读取数据，一边覆盖掉发送出去的数据。
 
@@ -1020,7 +1020,7 @@ Error: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._g_2dio_2derror_2dquark.Co
 
 看来要用 `getflag3` 来调用。在 `flagserver.c` 可以看到，它通过读取 `/proc/<pid>/comm` 来获得进程名。如果不是 `getflag3`，就会返回错误。
 
-这里我用的办法比较朴实，直接重新编译 `getflag3`，但是添加遗憾的代码把 flag 打印出来。
+这里我用的办法比较朴实，直接重新编译 `getflag3`，但是添加一行代码把 flag 打印出来。
 
 ```c
 g_print("%s\n", flag);
