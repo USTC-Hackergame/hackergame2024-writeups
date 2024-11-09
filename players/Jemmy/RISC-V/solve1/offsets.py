@@ -1,0 +1,27 @@
+from collections import defaultdict
+offset_leq_exit_true = defaultdict(int)
+offset_leq_exit_false = defaultdict(int)
+offset_bit_geq = 0x00000afc
+offset_bit_geq_label = 0x00000b08
+offset_bit_leq = 0x00000b0c
+offset_bit_leq_label = 0x00000b28
+offset_end = 0x000000a8
+offset_leq = 0x000000ac
+offset_leq_ret_false = 0x00000af4
+offset_leq_ret_true = 0x00000aec
+offset_loop_i_body = 0x00000038
+offset_loop_i_end = 0x000000a8
+offset_loop_i_exit = 0x00000034
+offset_loop_i_head = 0x00000018
+offset_loop_i_init = 0x00000014
+offset_loop_i_tail = 0x000000a0
+offset_loop_j_body = 0x00000064
+offset_loop_j_end = 0x00000098
+offset_loop_j_exit = 0x00000060
+offset_loop_j_head = 0x00000044
+offset_loop_j_init = 0x00000040
+offset_loop_j_swap = 0x00000088
+offset_loop_j_tail = 0x00000090
+offset_start = 0x00000000
+offset_leq_exit_true = {0: '0x00000ae4', 1: '0x00000a98', 10: '0x00000788', 11: '0x00000738', 12: '0x000006e8', 13: '0x00000698', 14: '0x00000648', 15: '0x000005f8', 16: '0x000005a8', 17: '0x00000558', 18: '0x00000508', 19: '0x000004b8', 2: '0x00000a40', 20: '0x00000468', 21: '0x00000418', 22: '0x000003c8', 23: '0x00000378', 24: '0x00000328', 25: '0x000002d8', 26: '0x00000288', 27: '0x00000238', 28: '0x000001e8', 29: '0x00000198', 3: '0x000009e8', 30: '0x00000148', 31: '0x000000f8', 4: '0x00000990', 5: '0x00000938', 6: '0x000008e0', 7: '0x00000888', 8: '0x00000830', 9: '0x000007d8'}
+offset_leq_exit_false = {0: '0x00000ac8', 1: '0x00000a7c', 10: '0x00000770', 11: '0x00000720', 12: '0x000006d0', 13: '0x00000680', 14: '0x00000630', 15: '0x000005e0', 16: '0x00000590', 17: '0x00000540', 18: '0x000004f0', 19: '0x000004a0', 2: '0x00000a24', 20: '0x00000450', 21: '0x00000400', 22: '0x000003b0', 23: '0x00000360', 24: '0x00000310', 25: '0x000002c0', 26: '0x00000270', 27: '0x00000220', 28: '0x000001d0', 29: '0x00000180', 3: '0x000009cc', 30: '0x00000130', 31: '0x000000e0', 4: '0x00000974', 5: '0x0000091c', 6: '0x000008c4', 7: '0x0000086c', 8: '0x00000814', 9: '0x000007c0'}
