@@ -141,11 +141,11 @@
 
 ![](photos/china-emu.png)
 
-或者在 Google 的搜索中也能找到「CRH6A-A」的身影
+或者在 Google 的搜索中也能找到「CRH6」的身影
 
 ![](photos/CRH6A-A.png)
 
-那么第二问的答案得到了，第一问呢？这个时候就是前半句提示语，「标志性的」，搜索 CRH6A-A 的 Wikipeida 页面：
+搜索 CRH6 的 Wikipedia 页面：
 
 <https://zh.wikipedia.org/wiki/%E5%92%8C%E8%B0%90%E5%8F%B7CRH6%E5%9E%8B%E7%94%B5%E5%8A%9B%E5%8A%A8%E8%BD%A6%E7%BB%84>
 
@@ -155,4 +155,4 @@
 
 作者 <a href="//commons.wikimedia.org/wiki/User:N509FZ" title="User:N509FZ">N509FZ</a> - <span class="int-own-work" lang="zh">自己的作品</span>，<a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>，<a href="https://commons.wikimedia.org/w/index.php?curid=94891427">链接</a>
 
-与题目中型号颜色匹配上，因此猜测是 [怀密线](https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%82%E9%83%8A%E9%93%81%E8%B7%AF%E6%80%80%E6%9F%94%E2%80%94%E5%AF%86%E4%BA%91%E7%BA%BF), 接下来沿着线路 **北京北站始，途经海淀区、昌平区、怀柔区，至密云区古北口站** 即可找到：「北京北动车运用所」，在地图上查找，旁边即为「积水潭医院」。
+与题目中型号颜色匹配上，因此猜测是 [怀密线](https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%82%E9%83%8A%E9%93%81%E8%B7%AF%E6%80%80%E6%9F%94%E2%80%94%E5%AF%86%E4%BA%91%E7%BA%BF)，型号是「CRH6F-A」，接下来沿着线路 **北京北站始，途经海淀区、昌平区、怀柔区，至密云区古北口站** 即可找到：「北京北动车运用所」，在地图上查找，旁边即为「积水潭医院」。
