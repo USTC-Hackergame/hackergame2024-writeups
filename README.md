@@ -78,6 +78,7 @@
 | [CNDY](players/CNDY/README.md) | 只做了签到（ | 签到 |
 | [Mako #Ciallo～(∠・ω< )⌒★](players/Mako%20%23Ciallo～(∠・ω<%20)⌒★/wp.md) | 总排名 51，大一学生 | 比大小王、不宽的宽字符、PowerfulShell、惜字如金 3.0、无法获得的秘密 |
 | [芋头 Leohearts](players/Leohearts/readme.md) | 老年选手复健，只做了一天 | 打不开的盒 每日论文太多了！ 比大小王 PowerfulShell Node.js is Web Scale PaoluGPT 无法获得的秘密 Docker for Everyone Plus 动画分享 禁止内卷 链上转账助手 不太分布式的软总线 旅行照片 4.0 猫咪问答 |
+| [Palve](players/Palve/README.md) | 记得交藏在裤裆里的flag! | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、PaoluGPT、Node.js is Web Scale、强大的正则表达式(1)、惜字如金3.0(1)、优雅的不等式(1)、无法获得的秘密、ZFS文件恢复(1)、Docker for Everyone Plus(1)、零知识数独(1) |
 
 ## 其他资源
 
