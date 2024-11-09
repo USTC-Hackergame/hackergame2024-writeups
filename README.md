@@ -76,9 +76,15 @@
 | [Jemmy](players/Jemmy/README.md) | 总排名第 8 名 | 比大小王、不宽的宽字符、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金、优雅的不等式、无法获得的秘密、Docker for Everyone Plus、看不见的彼方、ZFS 文件恢复、不太分布式的软总线、RISC-V：虎胆龙威、关灯、禁止内卷、零知识数独 |
 | [Rainy](players/Rainy/README.md) | 总排名 197，纯新人 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、零知识数独(1,2)、AI(1) |
 | [CNDY](players/CNDY/README.md) | 只做了签到（ | 签到 |
-| [Mako #Ciallo～(∠・ω< )⌒★](players/Mako%20%23Ciallo～(∠・ω<%20)⌒★/wp.md) | 总排名 51，大一学生 | 比大小王、不宽的宽字符、PowerfulShell、惜字如金 3.0、无法获得的秘密 |
+| [7086cmd](players/7086cmd/README.md) | 总排名 287，高中菜牲 | 签到、喜欢做签到的 CTFer 你们好呀、打不开的盒、每日论文太多了！、比大小王、Node.js is Web Scale、PaoluGPT、优雅的不等式(1)、动画分享(1) |
+| [Mako #Ciallo～(∠・ω< )⌒★](players/Mako%20%23Ciallo～(∠・ω%20)⌒★/wp.md) | 总排名 51，大一学生 | 比大小王、不宽的宽字符、PowerfulShell、惜字如金 3.0、无法获得的秘密 |
 | [芋头 Leohearts](players/Leohearts/readme.md) | 老年选手复健，只做了一天 | 打不开的盒 每日论文太多了！ 比大小王 PowerfulShell Node.js is Web Scale PaoluGPT 无法获得的秘密 Docker for Everyone Plus 动画分享 禁止内卷 链上转账助手 不太分布式的软总线 旅行照片 4.0 猫咪问答 |
+| [Palve](players/Palve/README.md) | 记得交藏在裤裆里的flag! | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、PaoluGPT、Node.js is Web Scale、强大的正则表达式(1)、惜字如金3.0(1)、优雅的不等式(1)、无法获得的秘密、ZFS文件恢复(1)、Docker for Everyone Plus(1)、零知识数独(1) |
 | [weifeng2356](players/weifeng2356/README.md) | 总排名第 160 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、强大的正则表达式(1)、惜字如金 3.0(1)、优雅的不等式(1)、关灯(1,2,3)、禁止内卷、零知识数独(1) |
+| [Cascade Kobayashi](players/Cascade/README.md) | 总排名 64，但是还是太弱小了 | 签到、喜欢做签到、打不开的盒、每日论文太多了！、比大小王、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式 (Easy, Medium)、看不见的彼方、不太分布式的软总线、RISC-V：虎胆龙威 (警告：易碎 / Fragility)、动画分享 (只要不停下...)、关灯 (Easy, Medium, Hard)、禁止内卷、哈希三碰撞 (三碰撞之一) |
+| [mcfx](players/mcfx/readme.md) | 总排名第 1 名 | 全部题目（除 签到、PowerfulShell、ZFS 文件恢复、LESS 文件查看器在线版、新生赛上的零解题） |
+| [梓瑶](players/ziyao233/readme.md) | 被开源指令集冲昏了头脑 | RISC-V：虎胆龙威(1,2) |
+| [MoeMagicMango](players/KoiMeautily/readme.md) | 总排名第 296 名, 很菜（ | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、无法获得的秘密、AI(1) |
 
 ## 其他资源
 
