@@ -85,7 +85,7 @@
 | [mcfx](players/mcfx/readme.md) | 总排名第 1 名 | 全部题目（除 签到、PowerfulShell、ZFS 文件恢复、LESS 文件查看器在线版、新生赛上的零解题） |
 | [梓瑶](players/ziyao233/readme.md) | 被开源指令集冲昏了头脑 | RISC-V：虎胆龙威(1,2) |
 | [MoeMagicMango](players/KoiMeautily/readme.md) | 总排名第 296 名, 很菜（ | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、Node.js is Web Scale、PaoluGPT、惜字如金 3.0(1)、无法获得的秘密、AI(1) |
-| [LiBr](players/LiBr/README.md) | 总榜第 18 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金3.0、优雅的不等式、无法获得的秘密、Docker for Everyone Plus(1)、链上转账助手(1,2)、不太分布式的软总线(1-3)、动画分享、关灯、禁止内卷、零知识数独(1)、神秘代码、LLM |
+| [LiBr](players/LiBr/README.md) | 总榜第 18 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金3.0、优雅的不等式、无法获得的秘密、Docker for Everyone Plus(1)、链上转账助手(1,2)、不太分布式的软总线(1-3)、动画分享、关灯(1-3)、禁止内卷、零知识数独(1)、神秘代码、LLM(1) |
 
 ## 其他资源
 
