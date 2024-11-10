@@ -106,6 +106,7 @@
 | [yezhiyi9670](players/yezhiyi9670/) | 总排名第 23 名，详细思考过程 | 非预期解：PowerfulShell、<span title="优雅的不等式">不等式</span>、<span title="无法获得的秘密">VNC</span>、<span title="Docker for Everyone Plus">Docker</span>；<br/>所有题目：签到、喜欢做签到的 CTFer 你们好呀、猫咪问答、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式(1)、惜字如金 3.0(1)、优雅的不等式、无法获得的秘密、<span title="Docker for Everyone Plus">无法上传的镜像</span>、<span title="看不见的彼方：交换空间">天空将你我相连</span>、不太分布式的软总线、动画分享、关灯(1,2,3)、禁止内卷、哈希三碰撞(1)、零知识数独(1,2)、<span title="先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」">\[redacted\]</span>(1) |
 | [H503mc](players/H503mc/) | 总排152 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0（LEO_CHAN?、FULL_RECALL）、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式（Easy）、惜字如金 3.0（题目 A）、无法获得的秘密、链上转账助手（转账失败、转账又失败）、不太分布式的软总线（What DBus Gonna Do?）、禁止内卷 |
 | [ElvinS](players/ElvinS/wp.md) | 总排59  沸物萌新 | 签到、喜欢做签到的CTFer你们好呀、猫咪问答、打不开的盒、比大小王、旅行照片4.0、不宽的宽字符、Node.Js is Web Scale、PaoluGPT、强大的正则表达式1,2、惜字如金A、不等式ez、Docker for everyone plus、链上转账助手、不太分布的软总线、动画分享、关灯123、禁止内卷、哈希三碰撞1 |
+| [鸟桃](players/鸟桃/README.md) | 总排名第 38 名 | AI、旅行照片 4.0、无法获得的秘密 |
 
 ## 其他资源
 
