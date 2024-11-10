@@ -19,7 +19,11 @@ misc web math bin都不会，一看排名一千多。
 诶不是，你们的write-up怎么都能这么快交上来的啊，我这次已经边做边写了，还是花了不少时间在赛后补充上。
 </p>
 
-\<CONNECTION LOST>
+<a href="https://pkupuzzle.art/endoftime/" title="我望向时间的尽头，那是时间的开始。">&lt;CONNECTION LOST&gt;</a>
+
+<p align=right>
+博客从去年装修至今，这就是我的烂摊子工程。等装修好了应该会出现在<a href="https://satgo1546.github.io/">我的GitHub Pages</a>上。
+</p>
 
 <h2 title="签到">让我们说𒀝𒅗𒁺𒌑</h2>
 
