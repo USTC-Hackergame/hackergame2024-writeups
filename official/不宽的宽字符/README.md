@@ -182,3 +182,82 @@ char     |        t        |        h        |        e        |        f       
 luojh 再补充：
 
 实际上，假设文件名真的是偶数个字符呢？其实也是有办法的。注意到路径中重复的 `\` 或者 `/` 会被算作一个，那我们可以把要读取的文件名补全到奇数个字符。例如，`.//flag` 就是当前目录下的偶数个字符文件名 `flag` 的奇数个字符的写法。注意 `/flag` 对于当前目录下的 flag 文件是不正确的，因为这是指根目录下的 flag 文件，因此上面我们用 `.` 来表示当前目录。
+
+@taoky 补充（2024/11/10）：
+
+以上提到「可能是因为小 A 拿了个纯中文名测试没问题吧」，之后发现照理来讲，只有在小 A 输入一个字符的情况下才会出现这种情况。所以我拿以下的 C 标准程序在 Windows 10 LTSC 上做了一些测试：
+
+```c
+#include <stdio.h>
+#include <wchar.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "");
+
+    wchar_t buffer[256];
+    fgetws(buffer, 256, stdin);
+
+    for (int i = 0; buffer[i] != L'\0'; i++) {
+        wchar_t wc = buffer[i];
+        unsigned char *bytes = (unsigned char*) &wc;
+        int size = sizeof(wchar_t);
+
+        wprintf(L"Character %c in hexadecimal: ", wc);
+        for (int j = 0; j < size; j++) {
+            wprintf(L"%02x ", bytes[j]);
+        }
+        wprintf(L"\n");
+    }
+
+    return 0;
+}
+```
+
+简体中文 Windows 的默认代码页是 CP936（GBK），这种情况读取到的是 UTF-16，没有问题：
+
+```console
+测试abc
+Character 测 in hexadecimal: 4b 6d
+Character 试 in hexadecimal: d5 8b
+Character a in hexadecimal: 61 00
+Character b in hexadecimal: 62 00
+Character c in hexadecimal: 63 00
+Character
+ in hexadecimal: 0a 00
+```
+
+但是如果使用 `chcp 65001` 把代码页改成 UTF-8，神奇的事情就发生了——程序会读取到无法解释的内容：
+
+```console
+测试abc
+Character 娴 in hexadecimal: 34 5a
+Character 嬭 in hexadecimal: 2d 5b
+Character 瘯 in hexadecimal: 2f 76
+Character a in hexadecimal: 61 00
+Character b in hexadecimal: 62 00
+Character c in hexadecimal: 63 00
+Character
+ in hexadecimal: 0a 00
+```
+
+不知道是个啥编码。
+
+在 wine 下运行的话结果似乎是有宽字符特色的 UTF-8：
+
+```console
+$ echo 测试abc | wine wide.exe
+Character æ in hexadecimal: e6 00
+Character µ in hexadecimal: b5 00
+Character 9 in hexadecimal: 39 20
+Character è in hexadecimal: e8 00
+Character ¯ in hexadecimal: af 00
+Character " in hexadecimal: 22 20
+Character a in hexadecimal: 61 00
+Character b in hexadecimal: 62 00
+Character c in hexadecimal: 63 00
+Character
+ in hexadecimal: 0a 00
+```
+
+实在太乱了，还是 All in UTF-8 好。
