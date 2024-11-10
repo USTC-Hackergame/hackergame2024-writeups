@@ -112,6 +112,7 @@
 | [Henry-ZHR](players/Henry-ZHR/README.md) | 排行榜ID Aengim7 | Docker for Everyone Plus、RISC-V：虎胆龙威（线程故障）、关灯 |
 | [lgklx](players/lgklx/readme.md)| 痛失校内一血！ | 图灵完备的浮点数减法 |
 | [Frank](players/Frank/README.md) | 总排81，弱弱的大一 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT、强大的正则表达式（12）、惜字如金 3.0（1）、优雅的不等式、不太分布式的软总线、关灯（123）、禁止内卷、零知识数独（12）、先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」(1) |
+| [Aristore](players/Aristore/README.md) | 总排405的新手 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答、打不开的盒、旅行照片 4.0、比大小王、PaoluGPT、惜字如金 3.0（1） |
 
 ## 其他资源
 
