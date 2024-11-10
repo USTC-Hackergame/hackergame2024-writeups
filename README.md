@@ -100,7 +100,7 @@
 | [Purofle](players/purofle/README.md) | 总排名第 167 名，高三没时间打，好可惜 | 签到，喜欢做签到的 CTFer 你们好呀，猫咪问答（Hackergame 十周年纪念版），打不开的盒，比大小王，旅行照片 4.0，PaoluGPT，链上转账助手（转账失败，转账又失败），不太分布式的软总线，零知识数独（数独高手） |
 | [ThrRip](players/ThrRip/README.md) | 总排名第 239 名（第一次打 CTF） | 无法获得的秘密（包含[本仓库唯一的 `.vue` 文件](https://github.com/search?q=repo%3AUSTC-Hackergame%2Fhackergame2024-writeups+language%3AVue&type=code)） |
 | [GalaxySnail](players/GalaxySnail) | 总排名第 76 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、旅行照片 4.0、PowerfulShell、Node.js is Web Scale、惜字如金 3.0 (1)、无法获得的秘密、看不见的彼方：交换空间 |
-
+| [lgklx](players/readme.md)| 痛失校内一血！ | 图灵完备的浮点数减法 |
 ## 其他资源
 
 [Hackergame 2024 幕后工作人员](https://hack.lug.ustc.edu.cn/credits/)
