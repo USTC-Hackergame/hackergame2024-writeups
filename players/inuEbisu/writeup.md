@@ -4,6 +4,8 @@
 
 这里就更着重强调一些个人的非预期 / 独特 (?) 的解法吧！
 
+本文采用 [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) 进行授权
+
 ## 猫咪问答 Q4 & Q6
 
 对不起第四问和第六问我是爆破的（对手指）
@@ -94,3 +96,6 @@ flash(f"评测成功，你的平方差为 {flag}")
 ```
 
 ![flag.png](involution/flag.png)
+
+## Epilogue
+欢迎来我的博客玩！[犬窝闲谭](https://inuebisu.cn)
