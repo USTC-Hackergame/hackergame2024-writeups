@@ -90,7 +90,7 @@
 | [风的影子](players/风的影子/README.md) | 总排名第26 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式（除Hard）、惜字如金 3.0（除题目 C）、优雅的不等式、无法获得的秘密、链上转账助手（除转账再失败）、不太分布式的软总线、动画分享、关灯（除Impossible）、禁止内卷、哈希三碰撞（三碰撞之一）、零知识数独（除无解之谜）、先104🤣」（「行吧就算标题可以很长但是 flag 一定要短点」） |
 | [一只白鼠](players/arat/README.md) | 总排名第 249 名，xm会less | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、PaoluGPT(1)、强大的正则表达式(1)、惜字如金 3.0(1)、优雅的不等式(1)、关灯(1) |
 | [1xx55](players/1xx55/README.md) | 总排名 128 名 | 签到、比大小王、打不开的盒、PaoluGPT、惜字如金3.0(题目A)、旅行照片4.0、优雅的不等式、PowerfulShell、每日论文太多了！、零知识数独（1）、AI(1)、喜欢做签到的 CTFer 你们好呀（1）、Node.js is Web Scale、强大的正则表达式、关灯（Eazy-Hard）、不太分布式的软总线（1）|
-| [三咲智子 @sxzz](players/sxzz/README.md) | 总排名 39 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale（未完待续）|
+| [三咲智子 @sxzz](players/sxzz/README.md) | 总排名 39 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式(1-2)、惜字如金 3.0 (1)、看不见的彼方：交换空间	、链上转账助手、不太分布式的软总线、动画分享、关灯(1-3)、禁止内卷、先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」(1)|
 | [Ishisashi](players/Ishisashi/memo.md) | 总排名第 34 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金 3.0、优雅的不等式、无法获得的秘密、ZFS 文件恢复、链上转账助手（仅 1）、不太分布式的软总线（仅 1）、关灯（仅 1·2·3）、禁止内卷、零知识数独（仅 1·2）、AI（仅 1） |
 | [Mivik](players/mivik/README.md) | 总排名第 5 名 | 每日论文太多了！、旅行照片 4.0、不宽的宽字符、PowerfulShell、惜字如金 3.0、优雅的不等式、无法获得的秘密、关灯、图灵完备的浮点数减法、零知识数独、名字太长的 LLM |
 | [WesKwong](players/WesKwong/README.md) | 总排名第 371 名，大学四年每年都参加，最后这一年来交一下wp罢 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、Node.js is Web Scale、PaoluGPT |
@@ -98,6 +98,8 @@
 | [ranwen](players/ranwen/2024-11-04-hackergame24.md) | 总排名第 2 名 | 全部题目（除新生赛上的零解题、认证恢复码、cat 绿色破解版） |
 | [莉特雅literal](players/莉特雅literal/README.md) | 总排名 123 名，第一次参加，很紧张 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、惜字如金 3.0、无法获得的秘密、ZFS 文件恢复、不太分布式的软总线、RISC-V：虎胆龙威 (2) |
 | [Purofle](players/purofle/README.md) | 总排名第 167 名，高三没时间打，好可惜 | 签到，喜欢做签到的 CTFer 你们好呀，猫咪问答（Hackergame 十周年纪念版），打不开的盒，比大小王，旅行照片 4.0，PaoluGPT，链上转账助手（转账失败，转账又失败），不太分布式的软总线，零知识数独（数独高手） |
+| [ThrRip](players/ThrRip/README.md) | 总排名第 239 名（第一次打 CTF） | 无法获得的秘密（包含[本仓库唯一的 `.vue` 文件](https://github.com/search?q=repo%3AUSTC-Hackergame%2Fhackergame2024-writeups+language%3AVue&type=code)） |
+| [GalaxySnail](players/GalaxySnail) | 总排名第 76 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、旅行照片 4.0、PowerfulShell、Node.js is Web Scale、惜字如金 3.0 (1)、无法获得的秘密、看不见的彼方：交换空间 |
 
 ## 其他资源
 

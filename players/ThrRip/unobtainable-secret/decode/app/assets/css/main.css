@@ -1,0 +1,29 @@
+/*
+ * Copyright (c) 2024 ThrRip
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-white;
+    @apply bg-black;
+    @apply accent-zinc-400;
+    @apply select-none;
+  }
+
+  input, textarea {
+    @apply px-1;
+    @apply bg-zinc-900;
+    @apply disabled:bg-zinc-950;
+  }
+  input {
+    @apply mx-0.5;
+  }
+}
