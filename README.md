@@ -110,7 +110,7 @@
 | [鸟桃](players/鸟桃/README.md) | 总排名第 38 名 | AI、旅行照片 4.0、无法获得的秘密 |
 | [lone](players/lone/README.md) | 总排511，弱小而平凡的题解 | 签到、喜欢做签到的CTFer你们好呀、猫咪问答、打不开的盒、比大小王、旅行照片4.0（差一题）、PaoluGPT、惜字如金A |
 | [Henry-ZHR](players/Henry-ZHR/README.md) | 排行榜ID Aengim7 | Docker for Everyone Plus、RISC-V：虎胆龙威（线程故障）、关灯 |
-| [lgklx](players/readme.md)| 痛失校内一血！ | 图灵完备的浮点数减法 |
+| [lgklx](players/lgklx/readme.md)| 痛失校内一血！ | 图灵完备的浮点数减法 |
 
 ## 其他资源
 
