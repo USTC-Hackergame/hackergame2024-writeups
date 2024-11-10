@@ -1742,7 +1742,7 @@ convert_to_ascii(NUMBERS)
 
 for在此处遍历3次，我们只看第一次就好了（j=0）。
 
-程序读入三个8字节数据后存入inputArray，进行SHA256运算后将产生的32字节数据存入v15偏移15字节（处。由于
+程序读入三个8字节数据后存入inputArray，进行SHA256运算后将产生的32字节数据存入v15偏移30字节处。由于
 
 ```c
 char v15[134]; // [rsp+72h] [rbp-8Eh] BYREF
