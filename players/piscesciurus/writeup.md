@@ -1,14 +1,54 @@
-好耶，上排行榜折线图了！
+# Hackergame 2024 解题报告 by piscesciurus
 
-随机判定随机过，AI题目AI做。<br>misc web math bin都不会，一看排名一千多。
+好耶，上排行榜折线图了！大成功！
+
+<p align=right>
+随机判定随机过，AI题目AI做。<br>
+misc web math bin都不会，一看排名一千多。
+</p>
 
 计算机科学中只有一大难题：配环境。
 
+<p align=right>
 这绝对比去年难吧？绝对是吧？
+</p>
 
 因为节标题等于题目名太无聊了，所以我对节标题进行了一些加密通话处理，相信选手们可以很轻松地明白每一节对应哪道题。节按题目列表顺序排列，小节按做出顺序排列。
 
+<p align=right>
 诶不是，你们的write-up怎么都能这么快交上来的啊，我这次已经边做边写了，还是花了不少时间在赛后补充上。
+</p>
+
+\<CONNECTION LOST>
+
+[签到](#让我们说𒀝𒅗𒁺𒌑)<br>
+[喜欢做签到的 CTFer 你们好呀](#我要成为签到题高手jpg)<br>
+[猫咪问答（Hackergame 十周年纪念版）](#解出谜题不需要是科大在校猫娘)<br>
+[打不开的盒](#开盒物理)<br>
+[每日论文太多了！](#yanami-et-al-2021-温水你就是这点不行啊)<br>
+[比大小王](#接口也是口算法也是算)<br>
+[旅行照片 4.0](#开盒地理)<br>
+[不宽的宽字符](#欸wchar_t)<br>
+[PowerfulShell](#贝壳高手)<br>
+[Node.js is Web Scale](#wat)<br>
+[PaoluGPT](#爬虫高手)<br>
+[强大的正则表达式](#正则高手)<br>
+[惜字如金 3.0](#爆破高手)<br>
+[优雅的不等式](#attention-is-all-you-need)<br>
+[无法获得的秘密](#远程主机强迫关闭了一个现有的连接)<br>
+[Docker for Everyone Plus](#无法上传的镜像)<br>
+[看不见的彼方：交换空间](#我确信天空将你我相连)<br>
+[链上转账助手](#你们怎么都会区块链啊)<br>
+[不太分布式的软总线](#软-总-线)<br>
+[RISC-V：虎胆龙威](#玩指令集原神玩的)<br>
+[动画分享](#玩语言原神玩的)<br>
+[关灯](#那家伙竟然敢无视灯)<br>
+[禁止内卷](#我们的部署確有問題)<br>
+[图灵完备的浮点数减法](#图灵完备的旷野大计算)<br>
+[哈希三碰撞](#原来这才是真正的区块链题)<br>
+[零知识数独](#纸笔高手)<br>
+[神秘代码 2](#求救我已经快想爆了)<br>
+[先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」](#大模型模型虎视眈眈)
 
 ## 让我们说𒀝𒅗𒁺𒌑
 
@@ -83,13 +123,15 @@ setTimeout(()=>submit(data.values.map(([a,b])=>a<b?'<':'>')),12000)
 
 3\. 被路中央的红黄蓝线坑了好久，这种线并不特别。右下角的垃圾桶上有小字“六安园林”。因为第4题的坛子岭很确定，所以可枚举六安市的公园。很巧，首个枚举的**中央森林公园**就对了。
 
-![](六安市.webp)![](中央森林公园.webp)
+<img src="六安市.webp" width="320" height="240"> <img src="中央森林公园.webp" width="320" height="240">
 
 6\. 搜索四编组动车没搜到什么有用的信息，看颜色以为是CR400AF，但仔细看发现车头黑色块形状弧度不对。搜索“很标志性的……四编组动车”，找到了北京只有四节车厢、使用**CRH6F-A**型电力动车组的粉色动车“怀密号”。
 
+**赛后补**：垃圾百度，用Google搜四编组动车就能一下子找到了。
+
 5\. 照片中为检修动车组的动车运用所。该线路一端为北京北站，故拍摄地为北京北动车运用所。通过卫星地图与照片中的建筑物形状对比，可以确认这一点。地图查询得到附近的北京**积水潭医院**。
 
-![](北京北动车运用所.webp)
+<img src="北京北动车运用所.webp" width="320" height="240">
 
 TCRF：本题有未使用的image05.jpg，是列车车厢内对着车厢一头显示屏拍摄的照片，其中车厢号部分被挖去，信息屏显示两行文字`<JOURNEY>  19:01`、`temperature: 24℃`。
 
@@ -97,7 +139,10 @@ TCRF：本题有未使用的image05.jpg，是列车车厢内对着车厢一头�
 
 <table>
 <thead><th>image02.jpg<th>image03.jpg<th>image05.jpg
-<tbody><td><img src="image02.jpg"><td><img src="image03.jpg"><td><img src="image05.jpg">
+<tbody>
+	<td><img src="image02.jpg" height="240">
+	<td><img src="image03.jpg" height="240">
+	<td><img src="image05.jpg" height="240">
 </table>
 
 ## 欸🤓👆，wchar_t
@@ -106,9 +151,9 @@ TCRF：本题有未使用的image05.jpg，是列车车厢内对着车厢一头�
 
 写入内容为`theflag\0`（其中`\0`是真的NUL，正确写入后文件大小为8字节）的文件，然后用UTF-16 LE重新打开，得到`桴晥慬g`，作为文件名。
 
-唉，Unicode早期标准的受害者。65001大概永远也无法成为Windows的默认代码页了，反倒是一开始就懒得管的Linux吃满了UTF-8红利。
+唉，早期Unicode标准的受害者。65001大概永远也无法成为Windows的默认代码页了，反倒是一开始就不管拉倒的Linux吃满了UTF-8红利。
 
-## 遵循指引，前往PowerShell那端的交界地
+## 贝壳高手
 
 点开题目前还以为真是PowerShell……
 
@@ -119,7 +164,7 @@ TCRF：本题有未使用的image05.jpg，是列车车厢内对着车厢一头�
 问了下Gemini，给我胡说八道了一通，却确实提醒了我：用环境变量和`~`活字印刷。
 
 > **User**: Write a shell gadget that, when executed using the `eval` builtin, results in `bash` being executed. The only characters that you can use are: space, `$`, `+`, `-`, digits 123456789 (you cannot use 0), `:`, `=`, `[`, `]`, `_`, `{`, `|`, `}`, `~`, `` ` ``. Be creative.
-
+>
 > **Model**: … Since `~` evaluates to the home directory path, we can extract individual characters. By carefully selecting the start and length using the constructed numerical indices, we pick out characters like "/", "b", "a", "s", "h", etc., and piece them together. …
 
 ba是凑不出了，目标是sh，s来自`~`，h来自`$-`。一开始还在想怎么展开`~`，发现赋值到变量就自动展开了。shell脚本语法坑的变态程度真是超乎想象。
@@ -127,6 +172,7 @@ ba是凑不出了，目标是sh，s来自`~`，h来自`$-`。一开始还在想�
 ```bash
 __=~
 ${__:7:1}${-:$[]:1}
+cat /flag
 ```
 
 ## Wat?
@@ -143,7 +189,7 @@ ${__:7:1}${-:$[]:1}
 
 ### 窥视未知
 
-几百年没见到这么经典的SQL注入了，在conversation_id参数填入`'or not shown--`即可看到一条隐藏的聊天记录，末尾有flag。这样就得到了第二小题的flag。……啊？
+几百年没见到这么经典的SQL注入了，在conversation_id参数填入`'or not shown or'`即可看到一条隐藏的聊天记录，末尾有flag。这样就得到了第二小题的flag。……啊？
 
 ### 千里挑一
 
@@ -182,8 +228,9 @@ Kleene算法是动态规划，结构有点像Floyd算法。<var>f<sub>i→j,k</s
 ```python
 import re
 def optimize(r: str) -> str:
-    # https://xkcd.com/1313/
     r = r.replace("()*", "")
+    # 我要在这里放个xkcd链接，熟悉的同学可能已经知道是哪个了
+    # https://xkcd.com/1313/
     while (r2 := re.sub(r"\(([^|)]+)\)(?!\*)", r"\1", r)) != r:
         r = r2
     r = re.sub(r"\(\|?([0-9])\|?\)\*", r"\1*", r)
@@ -212,7 +259,7 @@ print(optimize("|".join(r[0][0])))
 
 ### Hard
 
-阅读Wikipedia上的Cyclic redundancy check页面，计算方法举例用的就是这个CRC-3-GSM，可以看出CRC的算法与除法非常相似。将截至目前的校验和作为8种状态，读入字符产生状态转移。
+阅读Wikipedia上的Cyclic redundancy check页面，计算方法一节举例用的就是这个CRC-3-GSM，可以看出CRC的算法与除法非常相似。将截至目前的校验和作为8种状态，读入字符产生状态转移。
 
 为了尽可能缩短正则表达式，花了一刻钟跑了一遍整个8!排列空间，得到的结果非常地amazing啊，最长的是287992字符，最短的是158180字符。然而，即使是最短的，也要花费很长时间才能确认匹配失败，无法通过本题。
 
@@ -232,6 +279,7 @@ def crc3(r: int, b: int) -> int:
     return b
 r0 = [[set[str]() for _ in range(8)] for _ in range(8)]
 for i in range(8):
+    # r0[i][i].add("")
     for j in b"0123456789":
         r0[i][crc3(i, j)].add(chr(j))
 def makeregex(perm: tuple[int, ...]) -> str:
@@ -258,7 +306,7 @@ print(makeregex((4, 0, 2, 7, 3, 1, 6, 5)))
 
 C题和B题代码几乎一样，区别是二次函数的常数也被惜字如金了，不知大小写，这一行的搜索空间是2<sup>32</sup>，要是本地能爆相信很多选手都想跟这题爆了。
 
-实际上我最先注意到的是一个奇怪的事情：每行的散列会被保存到TXT文件名中，在校验时读取。这固然是一种很新的散列表，但这怎么看都有蹊跷。注意到6个字节经过Base85编码后会变成8个ASCII字符，而`answer_c`也符合这个格式。（Python的Base85和Ascii85不是同一种编码。）再注意到行散列匹配但内容不匹配时会输出不匹配的字符。也就是说，只要控制每行的散列值等于0xd0a7b1dbd371，就能从最后一位开始逐字符爆破出flag。
+实际上我最先注意到的是一个奇怪的事情：每行的散列会被保存到TXT文件名中，在校验时读取，是否有些多余？这固然是一种很新的哈希表，但这怎么看都有蹊跷。注意到6个字节经过Base85编码后会变成8个ASCII字符，而`answer_c`也符合这个格式。（Python的Base85和Ascii85不是同一种编码。）再注意到行散列匹配但内容不匹配时会输出不匹配的字符。也就是说，只要控制每行的散列值等于0xd0a7b1dbd371，就能从最后一位开始逐字符爆破出flag。
 
 我估计这是C题的解法。这也印证了C题做出人数如此少的原因：标称math，解法却需要与服务器交互爆破。但是这种解法可行的前提是至少要知道CRC多项式，还要反向计算散列值。散列函数只是一个二次函数，或许有办法解开，但CRC多项式怎么逆向呢？
 
@@ -370,13 +418,13 @@ for b in b85alphabet:
             print(flag2)
 ```
 
-**赛后补**：哇居然有选手用显卡爆多项式还爆出来了。我其实还试过用Z3爆，但是没成功。
+**赛后补**：哇居然有选手用显卡爆多项式还爆出来了。我也试过用Z3爆，但是没成功。但有选手用Z3出了，为啥我的Z3爆不出呢，就因为我不会解二次方程吗？
 
 ## Attention Is All You Need
 
 ### Easy
 
-不久前，我被B站推送到了关于注意力机制的视频[《【漫士科普】不是，这帮数学大佬都是怎么注意到的？》](https://www.bilibili.com/video/av1956357911)。视频是一个字都没看懂，但里面有个能积出<var>π</var>的式子，抄来用用。
+不久前，我被B站推送到了关于注意力机制的视频[《【漫士科普】不是，这帮数学大佬都是怎么注意到的？》](https://www.bilibili.com/video/av1956357911)。视频是一个字都没看懂，但里面有个能积出π的式子，抄来用用。
 
 注意到是SymPy帮忙验证区间上恒为正，并不要求被积式真的是正因式乘积的形式，所以只要找到一个足够精确的表达式，然后调整常数就能完成。连常数都懒得算了，直接交给SymPy吧。
 
@@ -451,17 +499,17 @@ fi.oninput=async()=>{
 f=new Uint8Array(await fi.files[0].arrayBuffer())
 im=new ImageData(hi.width,hi.height)
 for(i=0;i<f.length;i++){
-    im.data[i*4]=f[i-1]&0xf0|8
-    im.data[i*4+1]=f[i]&0xf0|8
-    im.data[i*4+2]=f[i+1]&0xf0|8
-    im.data[i*4+3]=255
+  im.data[i*4]=f[i-1]&0xf0|8
+  im.data[i*4+1]=f[i]&0xf0|8
+  im.data[i*4+2]=f[i+1]&0xf0|8
+  im.data[i*4+3]=255
 }
 hi.getContext('2d').putImageData(im,0,0)
 for(i=0;i<f.length;i++){
-    im.data[i*4]=f[i-1]<<4&0xf0|8
-    im.data[i*4+1]=f[i]<<4&0xf0|8
-    im.data[i*4+2]=f[i+1]<<4&0xf0|8
-    im.data[i*4+3]=255
+  im.data[i*4]=f[i-1]<<4&0xf0|8
+  im.data[i*4+1]=f[i]<<4&0xf0|8
+  im.data[i*4+2]=f[i+1]<<4&0xf0|8
+  im.data[i*4+3]=255
 }
 lo.getContext('2d').putImageData(im,0,0)
 }
@@ -476,7 +524,7 @@ VNC画质拉到最高，传输的画面依旧有损，但不像某些视频网�
 
 解码脚本是GPT写的，也是网页。因为不像编码需要挨个字敲进去，长就长点，不贴了。
 
-**赛后补**：好多选手都录屏，我嫌解析麻烦，主要是要弄个能读视频的库。我也想到用二维码了，但一张二维码数据量太少，编码也得找库，把编码程序传到服务器上很不方便。我的方法既不需要hack noVNC WebSocket，又不需要等待翻页，编码脚本短到手敲也不是不行。
+**赛后补**：好多选手都录屏，我嫌解析麻烦，主要是要弄个能读视频的库。我也想到用二维码了，但一张二维码数据量太少，编码也得找库，把编码程序传到服务器上很不方便。我的方法既不需要hack noVNC WebSocket，又不需要等待翻页，编码脚本短到手敲也不是不行<s>，下次还填非常简单</s>。
 
 ## 无法上传的镜像
 
@@ -514,7 +562,7 @@ RUN ["/bin/busybox", "ln", "-s", "/bin/busybox", "/bin/sh"]
 CMD ["/bin/sh"]
 ```
 
-构建出来的镜像压缩后只有684KB。看到群友接连吐槽ZMODEM，果断选择最朴实无华的网页终端粘贴一万行Base64上传法，少走不知道多少弯路。不用gzip而是用xz的话能压得更小，但服务器上没有xz，解压不了。
+构建出来的镜像压缩后只有684KB。看到群友接连吐槽ZMODEM，我果断选择最朴实无华的网页终端粘贴一万行Base64上传法，少走不知道多少弯路。不用gzip而用xz的话能压得更小，但服务器上没有xz，解压不了。
 
 ```sh
 # 本地构建镜像
@@ -974,7 +1022,7 @@ print("_end: j _end")
 
 用12位偏移量似乎可以表示整个内存地址空间，例如`sw x16, -0x40(x0)`会写入到内存地址0xFC0，但实际并不可行，因为内存设备判断地址在0xFFFF以下才会写入，而负偏移量会符号扩展到32位。这破玩意居然还有MMIO，往地址0x10000000写数据还会输出。
 
-寄存器捉襟见肘，很难想象这种情况下还能写出计数循环，但如第二小题那样完全展开的话，指令数量又太多了。注意到题目判定很慢的原因是无论CPU在做什么都固定执行一百万个时钟周期，并没有程序正常退出这一说法，给出的示例程序也是执行完成后主动陷入死循环。既然如此，那么可以将冒泡排序的外层循环改为无限循环，再把内层循环展开，这样就消除计数比较的步骤了。无条件跳转指令因为偏移量不能为负而不能回头，但这可以用`beq x0, x0`解决。
+寄存器捉襟见肘，很难想象这种情况下还能写出计数循环，但如第二小题那样完全展开的话，指令数量又太多了。注意到题目判定很慢的原因是无论CPU在做什么都固定执行一百万个时钟周期，并没有程序正常退出这一说法，给出的示例程序也是执行完成后主动陷入死循环。既然如此，那么可以将冒泡排序的外层循环改为无限循环，再把内层循环展开，这样就能在不彻底展开两层循环的情况下消除计数比较的步骤了。无条件跳转指令因为偏移量不能为负而不能回头，但这可以用`beq x0, x0`解决。估算一下，展开的每轮循环大约有几十条指令的配额，应该绰绰有余了。
 
 能用且实用的存取指令只有下面几种，其中偏移量在[−0x800, 0x7FF]的范围内。
 
@@ -1102,7 +1150,7 @@ for i in range(4):
 print("jalr x0, (x18)")  # 返回
 ```
 
-**赛后补**：我完全没有发现`bnez`和移位都可用，题目的限制还能进一步加强<s>，下次还填非常简单</s>。
+**赛后补**：我完全没有发现`bnez`和移位都可用，题目的限制还能进一步加强<s>，下次还填非常简单</s>。查找表不需要动态生成，填在固件里也可以。
 
 ## 玩语言原神玩的
 
@@ -1372,7 +1420,7 @@ print(conn.recvall().decode())
 
 **赛后补**：官解的PLU分解是个啥？PLU分解将矩阵分解为三个，官解没有packbits，每个元素占1字节，每个矩阵大小为471MB，三个矩阵共计1.4GB，经过ZIP压缩还剩55MB。在我的电脑上，官解预处理需要9分钟，求解需要1.2秒。我的程序也是NumPy，预处理只需要6分半，求解只需要0.2秒。因为复杂度相同，这应该是优化上的差异。我看到不少选手虽然用了正确解法，但Python超时，换C++等语言才过，大抵是没有使用NumPy向量化技巧。
 
-## 以下部署操作均为演示，请助教和学生都不要模仿！
+## 我们的部署確有問題
 
 我干过跟助教几乎一样的偷懒部署，可惜用户也懒得攻击我。致敬每一个将调试功能用于生产的先驱者。
 
@@ -1386,7 +1434,7 @@ f.append('file',new Blob(['app=__import__("flask").Flask("",static_folder="")'])
 fetch('/submit',{method:'POST',credentials:'include',body:f})
 ```
 
-然后访问`/answers.json`。
+是的，浏览器内发POST请求也能任意指定上传文件名。这一行Python代码就是静态资源Flask服务器，访问`/answers.json`就能拿到原始JSON文件。
 
 ## 图灵完备的旷野大计算
 
@@ -1398,7 +1446,7 @@ fetch('/submit',{method:'POST',credentials:'include',body:f})
 
 @tom7还有一篇更新的文章[GradIEEEnt half decent](http://tom7.org/grad/)指出浮点数运算误差产生的非线性可用于训练神经网络。
 
-**赛后补**：原来题目正文第一句话就暗示了这篇文章，文章的第一段就是：“假如你是我教授。也许你真的是我的教授，那么我开口之前你可能就已经开始汗流浃背了。”作者推荐去看这篇文章配套的视频。此外，[PowerPoint图灵机](https://esolangs.org/wiki/(P%E2%84%A2TM%E2%84%A2)%E2%84%A2)和[MOV指令](https://esolangs.org/wiki/Mov)图灵完备也是真的，用Minecraft红石电路搭CPU的工程更是不计其数。
+**赛后补**：题目正文第一句话就暗示了这篇文章，文章的第一段就是：“假如你是我教授。也许你真的是我的教授，那么我开口之前你可能就已经开始汗流浃背了。”官解竟然没提到这篇文章。文章作者推荐去看配套的视频。此外，[PowerPoint图灵机](https://esolangs.org/wiki/(P%E2%84%A2TM%E2%84%A2)%E2%84%A2)和[MOV指令](https://esolangs.org/wiki/Mov)图灵完备也是真的，用Minecraft红石电路搭CPU的工程更是不计其数。
 
 这篇文章中的函数<var>f</var>(<var>x</var>) = <var>x</var> + <var>a</var> − <var>a</var>引起了我的注意。特别是，当取的常数使自变量在加法后刚好落在浮点精度跳变的边界上，就有相当程度的非线性发生，而非单纯的舍入误差。写了个脚本凑一下，还真找到了能直接将0、1、2钳制到0和1的办法，而且还不止一种。
 
@@ -1492,9 +1540,9 @@ if (h[0] == h[1] && h[1] == h[2]) {
 
 一年一度的“这就是puzzlehunt给我的自信”时间！
 
-[Nutrimatic](https://nutrimatic.org/) Is All You Need，又名《强大的正则表达式》，基于Wikipedia语料提供以使用频次排序的词组检索。
+[Nutrimatic](https://nutrimatic.org/) Is All You Need，又名《强大的正则表达式》，基于Wikipedia语料提供依使用频次排序的词组检索。
 
-将x替换为`[hackergmx]`，然后搜索。例如对于“xnd txx stxxxs wxxx xixx”，[在Nutrimatic上搜索`"[hackergmx]nd t[hackergmx]{2} st[hackergmx]{3}s w[hackergmx]{3} [hackergmx]i[hackergmx]{2}"`](https://nutrimatic.org/?q=%22%5Bhackergmx%5Dnd+t%5Bhackergmx%5D%7B2%7D+st%5Bhackergmx%5D%7B3%7Ds+w%5Bhackergmx%5D%7B3%7D+%5Bhackergmx%5Di%5Bhackergmx%5D%7B2%7D%22)，第一个结果即为正确的“and the stakes were high”。手动解开整段密文。
+将x替换为`[hackergmx]`，然后搜索。例如对于“xnd txx stxxxs wxxx xixx”，[在Nutrimatic上搜索`"[hackergmx]nd t[hackergmx]{2} st[hackergmx]{3}s w[hackergmx]{3} [hackergmx]i[hackergmx]{2}"`](https://nutrimatic.org/2024/?q=%22%5Bhackergmx%5Dnd+t%5Bhackergmx%5D%7B2%7D+st%5Bhackergmx%5D%7B3%7Ds+w%5Bhackergmx%5D%7B3%7D+%5Bhackergmx%5Di%5Bhackergmx%5D%7B2%7D%22)，第一个结果即为正确的“and the stakes were high”。如法炮制，手动解开整段密文。
 
 用单词词典检索会遇到很多可能性，例如[用Qat在UKACD中检索“xxxx”](https://www.quinapalus.com/cgi-bin/qat?pat=%5Bhackergmx%5D%5Bhackergmx%5D%5Bhackergmx%5D%5Bhackergmx%5D&dict=0)的可能词有120个。用Nutrimatic，可提供尽可能长的搜索条件，以期通过上下文排除可能性。
 
@@ -1520,7 +1568,7 @@ import secrets
 from llama_cpp import Llama, LlamaGrammar
 from tqdm import tqdm
 
-with open("template.txt", "r") as f:
+with open("after.txt", "r") as f:
     g = f.read()
     g = re.sub(r"[^x]+", lambda m: '"%s" ' % m.group(0), g)
     g = re.sub(r"x+", lambda m: "x{%d} " % len(m.group(0)) if len(m.group(0)) > 1 else "x ", g)
@@ -1590,5 +1638,3 @@ with open(f"{time.strftime("%d-%H-%M-%S")}.log", "w") as f:
 +every challenge is a chance to show off
  your hacking skills and your sense of humor.
 ```
-
-翻日志发现，确实有一次模型生成了show off，但showcase明显多得多。
