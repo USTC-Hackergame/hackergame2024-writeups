@@ -107,6 +107,7 @@
 | [H503mc](players/H503mc/) | 总排152 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0（LEO_CHAN?、FULL_RECALL）、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式（Easy）、惜字如金 3.0（题目 A）、无法获得的秘密、链上转账助手（转账失败、转账又失败）、不太分布式的软总线（What DBus Gonna Do?）、禁止内卷 |
 | [ElvinS](players/ElvinS/wp.md) | 总排59  沸物萌新 | 签到、喜欢做签到的CTFer你们好呀、猫咪问答、打不开的盒、比大小王、旅行照片4.0、不宽的宽字符、Node.Js is Web Scale、PaoluGPT、强大的正则表达式1,2、惜字如金A、不等式ez、Docker for everyone plus、链上转账助手、不太分布的软总线、动画分享、关灯123、禁止内卷、哈希三碰撞1 |
 | [鸟桃](players/鸟桃/README.md) | 总排名第 38 名 | AI、旅行照片 4.0、无法获得的秘密 |
+| [Henry-ZHR](players/Henry-ZHR/README.md) | 排行榜ID Aengim7 | Docker for Everyone Plus、RISC-V：虎胆龙威（线程故障）、关灯 |
 
 ## 其他资源
 
