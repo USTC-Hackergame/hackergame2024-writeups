@@ -1,0 +1,1 @@
+ffmpeg -i secret-video-1.mkv -vsync vfr -filter_complex "select=gt(scene\,0.01)" "frames/1-%04d.png"

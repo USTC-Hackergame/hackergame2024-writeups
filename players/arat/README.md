@@ -56,7 +56,7 @@ Google 搜索“ USTC 2015 Hackergame OR 信息安全大赛 ”即可
 
 ### 2. 众所周知，Hackergame 共约 25 道题目。近五年（不含今年）举办的 Hackergame 中，题目数量最接近这个数字的那一届比赛里有多少人注册参加？
 
-Google 搜索近五年的 hackergame GitHub官方题解，数每一年的题目数量，发现2019题目数量最接近（28题），然后在https://lug.ustc.edu.cn/wiki/lug/events/hackergame/找到2019年注册人数信息为**2682**
+Google 搜索近五年的 hackergame GitHub官方题解，数每一年的题目数量，发现2019题目数量最接近（28题），然后在<https://lug.ustc.edu.cn/wiki/lug/events/hackergame/>找到2019年注册人数信息为**2682**
 
 ### 3. Hackergame 2018 让哪个热门检索词成为了科大图书馆当月热搜第一
 
@@ -175,7 +175,7 @@ while(state.score1<100){
 
 <img src="img\屏幕截图 2024-11-09 165327.png" alt="9" style="zoom:200%;" />
 
-一眼丁真，鉴定为六安园林。Google上搜 “六安园林有哪些公园” ，得到搜索结果 "六安市的十大公园" http://www.360doc.com/content/24/0119/10/84070625_1111563722.shtml，一个一个试就行（第一个**中央森林公园**就是）。
+一眼丁真，鉴定为六安园林。Google上搜 “六安园林有哪些公园” ，得到搜索结果 "六安市的十大公园" <http://www.360doc.com/content/24/0119/10/84070625_1111563722.shtml>，一个一个试就行（第一个**中央森林公园**就是）。
 
 喷泉：
 
@@ -338,11 +338,9 @@ for single in links[2:]:
 ### Easy
 
 注意到，
-$$
-f(x)=4 \sqrt{1-x^2}-4\sqrt{1-x} \\
+$$f(x)=4 \sqrt{1-x^2}-4\sqrt{1-x} \\
 在x\in [0,1]上恒大于0，\\
-且\int^{1}_{0}f(x)\ dx=\frac{8}{3}
-$$
+且\int^{1}_{0}f(x)\ dx=\frac{8}{3}$$
 
 
 ## 关灯
