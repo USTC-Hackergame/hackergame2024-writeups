@@ -101,7 +101,11 @@
 | [ThrRip](players/ThrRip/README.md) | 总排名第 239 名（第一次打 CTF） | 无法获得的秘密（包含[本仓库唯一的 `.vue` 文件](https://github.com/search?q=repo%3AUSTC-Hackergame%2Fhackergame2024-writeups+language%3AVue&type=code)） |
 | [GalaxySnail](players/GalaxySnail) | 总排名第 76 名 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、旅行照片 4.0、PowerfulShell、Node.js is Web Scale、惜字如金 3.0 (1)、无法获得的秘密、看不见的彼方：交换空间 |
 | [piscesciurus](players/piscesciurus/README.md) | 总排名第 7 名 | <span title="签到">让我们说𒀝𒅗𒁺𒌑</span>、<span title="喜欢做签到的 CTFer 你们好呀">我要成为签到题高手.jpg</span>、<span title="猫咪问答（Hackergame 十周年纪念版）">解出谜题不需要是科大在校猫娘</span>、<span title="打不开的盒">开盒（物理）</span>、<span title="每日论文太多了！">Yanami, et al., 2021. 温水你就是这点不行啊.</span>、<span title="比大小王">接口也是口，算法也是算</span>、<span title="旅行照片 4.0">开盒（地理）</span>、<span title="不宽的宽字符">欸🤓👆，wchar_t</span>、<span title="PowerfulShell">贝壳高手</span>、<span title="Node.js is Web Scale">Wat?</span>、<span title="PaoluGPT">爬虫高手</span>、<span title="强大的正则表达式">正则高手</span>、<span title="惜字如金 3.0">爆破高手</span>、<span title="优雅的不等式">Attention Is All You Need</span>、<span title="无法获得的秘密">远程主机强迫关闭了一个现有的连接</span>、<span title="Docker for Everyone Plus">无法上传的镜像</span>、<span title="看不见的彼方：交换空间">我确信，天空将你我相连</span>、<span title="链上转账助手">你们怎么都会区块链啊</span> (1, 2, <s>3</s>)、<span title="不太分布式的软总线">软 总 线</span>、<span title="RISC-V：虎胆龙威">玩指令集原神玩的</span>、<span title="动画分享">玩语言原神玩的</span>、<span title="关灯">那家伙竟然敢无视灯</span>、<span title="禁止内卷">我们的部署確有問題</span>、<span title="图灵完备的浮点数减法">图灵完备的旷野大计算</span>、<span title="哈希三碰撞">原来这才是真正的区块链题</span> (1)、<span title="零知识数独">纸笔高手</span> (1)、<s><span title="神秘代码 2">求救，我已经快想爆了</span></s>、<span title="先不说关于我从零开始独自在异世界转生成某大厂家的 LLM 龙猫女仆这件事可不可能这么离谱，发现 Hackergame 内容审查委员会忘记审查题目标题了ごめんね，以及「这么长都快赶上轻小说了真的不会影响用户体验吗🤣」">大模型模型虎视眈眈</span> (1, <s>2</s>) |
+<<<<<<< HEAD
 | [犬戎](players/inuEbisu/writeup.md) | 总排名第 56 名，主要包含有点独特的解及非预期解 | 猫咪问答 Q4 & Q6、旅行照片 Q5、PowerfulShell、优雅的不等式、不太分布式的软总线、禁止内卷 |
+=======
+| [littleTT](players/littleTT/) | 总排名第 16 名，有始有终 | 签到、喜欢做签到的 CTFer 你们好呀、猫咪问答（Hackergame 十周年纪念版）、打不开的盒、每日论文太多了！、比大小王、旅行照片 4.0、不宽的宽字符、PowerfulShell、Node.js is Web Scale、PaoluGPT、强大的正则表达式、惜字如金 3.0 (1,2)、优雅的不等式、无法获得的秘密、Docker for Everyone Plus (1)、看不见的彼方：交换空间、链上转账助手 (1,2)、不太分布式的软总线、RISC-V：虎胆龙威 (2)、动画分享 (1)、关灯 (1,2,3)、禁止内卷、哈希三碰撞 (1)、零知识数独、神秘代码 2 (1)、「AI」(1) |
+>>>>>>> 3c6f96c (update README)
 
 ## 其他资源
 
