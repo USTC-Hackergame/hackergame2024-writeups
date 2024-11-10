@@ -1,0 +1,98 @@
+Host: chal02-rta5nuww.hack-challenge.lug.ustc.edu.cn:8443
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="130", "Microsoft Edge";v="130", "Not?A_Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Origin: https://chal02-u4iwr5qc.hack-challenge.lug.ustc.edu.cn:8443
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryDUBvNsR6vG0nnNk5
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://chal02-u4iwr5qc.hack-challenge.lug.ustc.edu.cn:8443/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7,en-GB;q=0.6
+Cookie: [redacted]
+
+------WebKitFormBoundaryDUBvNsR6vG0nnNk5
+Content-Disposition: form-data; name="file"; filename="../web/app.py"
+Content-Type: application/json
+
+from flask import Flask, render_template, request, flash, redirect
+import json
+import os
+import traceback
+import secrets
+
+app = Flask(__name__)
+app.secret_key = secrets.token_urlsafe(64)
+
+UPLOAD_DIR = "/tmp/uploads"
+
+os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+# results is a list
+try:
+    with open("results.json") as f:
+        results = json.load(f)
+except FileNotFoundError:
+    results = []
+    with open("results.json", "w") as f:
+        json.dump(results, f)
+
+
+def get_answer():
+    # scoring with answer
+    # I could change answers anytime so let's just load it every time
+    with open("answers.json") as f:
+        answers = json.load(f)
+        # sanitize answer
+        for idx, i in enumerate(answers):
+            if i < 0:
+                answers[idx] = 0
+    return answers
+
+
+@app.route("/", methods=["GET"])
+def index():
+    return json.dumps(open("answers.json").read())
+    # return render_template("index.html", results=sorted(results))
+
+
+@app.route("/submit", methods=["POST"])
+def submit():
+    if "file" not in request.files or request.files['file'].filename == "":
+        flash("你忘了上传文件")
+        return redirect("/")
+    file = request.files['file']
+    filename = file.filename
+    filepath = os.path.join(UPLOAD_DIR, filename)
+    file.save(filepath)
+
+    answers = get_answer()
+    try:
+        with open(filepath) as f:
+            user = json.load(f)
+    except json.decoder.JSONDecodeError:
+        flash("你提交的好像不是 JSON")
+        return redirect("/")
+    try:
+        score = 0
+        for idx, i in enumerate(answers):
+            score += (i - user[idx]) * (i - user[idx])
+    except:
+        flash("分数计算出现错误")
+        traceback.print_exc()
+        return redirect("/")
+    # ok, update results
+    results.append(score)
+    with open("results.json", "w") as f:
+        json.dump(results, f)
+    flash(f"评测成功，你的平方差为 {score}")
+    return redirect("/")
+
+------WebKitFormBoundaryDUBvNsR6vG0nnNk5--
