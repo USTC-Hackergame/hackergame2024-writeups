@@ -28,15 +28,15 @@ flag{actually_theres_another_flag_here_trY_to_f1nD_1t_y0urself___join_us_ustc_ne
 
 ## 猫咪问答（Hackergame 十周年纪念版）
 
-1. 官网翻看活动记录[信息安全大赛 Hackergame - LUG @ USTC](https://lug.ustc.edu.cn/wiki/lug/events/hackergame/)找到了第二届也就是2015年的存档[第二届安全竞赛（存档）](https://lug.ustc.edu.cn/wiki/sec/contest.html)。比赛时间安排下面找到“ 10 月 17 日 周六晚上 19:30 ==3A204== 网络攻防技巧讲座”。
+1. 官网翻看活动记录[信息安全大赛 Hackergame - LUG @ USTC](https://lug.ustc.edu.cn/wiki/lug/events/hackergame/)找到了第二届也就是2015年的存档[第二届安全竞赛（存档）](https://lug.ustc.edu.cn/wiki/sec/contest.html)。比赛时间安排下面找到“ 10 月 17 日 周六晚上 19:30 <mark>3A204</mark> 网络攻防技巧讲座”。
 
-2. 翻看近几年官方wp发现[ustclug/hackergame2019-writeups](https://github.com/ustclug/hackergame2019-writeups/)2019年有28题是最接近的。再翻看2019年的活动记录[中国科学技术大学第六届信息安全大赛圆满结束 - LUG @ USTC](https://lug.ustc.edu.cn/news/2019/12/hackergame-2019/)就能找到”经统计，在本次比赛中，总共有 ==2682== 人注册“。
+2. 翻看近几年官方wp发现[ustclug/hackergame2019-writeups](https://github.com/ustclug/hackergame2019-writeups/)2019年有28题是最接近的。再翻看2019年的活动记录[中国科学技术大学第六届信息安全大赛圆满结束 - LUG @ USTC](https://lug.ustc.edu.cn/news/2019/12/hackergame-2019/)就能找到”经统计，在本次比赛中，总共有 <mark>2682</mark> 人注册“。
 
-3. 直接找到2018的wp[ustclug/hackergame2018-writeups](https://github.com/ustclug/hackergame2018-writeups)，翻到最下面看到花絮[其他花絮](https://github.com/ustclug/hackergame2018-writeups/blob/master/misc/others.md)就能发现：“==程序员的自我修养==”已经成为了图书馆本月热搜词的第一名
+3. 直接找到2018的wp[ustclug/hackergame2018-writeups](https://github.com/ustclug/hackergame2018-writeups)，翻到最下面看到花絮[其他花絮](https://github.com/ustclug/hackergame2018-writeups/blob/master/misc/others.md)就能发现：“<mark>程序员的自我修养</mark>”已经成为了图书馆本月热搜词的第一名
 
-4. 翻看论文[USENIXSecurity2024-FakeBehalf-Final-Version.pdf](https://www.usenix.org/system/files/usenixsecurity24-ma-jinrui.pdf)作者在16个电子邮件服务提供商和20个客户端的组合上进行了实验，总共有==336==种组合（包括16个目标提供商的网络界面）。
+4. 翻看论文[USENIXSecurity2024-FakeBehalf-Final-Version.pdf](https://www.usenix.org/system/files/usenixsecurity24-ma-jinrui.pdf)作者在16个电子邮件服务提供商和20个客户端的组合上进行了实验，总共有<mark>336</mark>种组合（包括16个目标提供商的网络界面）。
 
-5. 直接找到这个[commit](https://github.com/torvalds/linux/commit/6e90b675cf942e50c70e8394dfb5862975c3b3b2)不难发现==6e90b6==75cf942e50c70e8394dfb5862975c3b3b2
+5. 直接找到这个[commit](https://github.com/torvalds/linux/commit/6e90b675cf942e50c70e8394dfb5862975c3b3b2)不难发现<mark>6e90b6</mark>75cf942e50c70e8394dfb5862975c3b3b2
 
 6. 代码如下
 
@@ -74,7 +74,7 @@ if __name__ == "__main__":
 - 要先把[tokenizer.json](https://huggingface.co/meta-llama/Meta-Llama-3-70B/blob/main/tokenizer.json)下载下来，如果提示没有权限要先向向官方申请，过几分钟就通过了
 - 然后把 HTML 源代码 存到本地
 - 最后根据实际改动上面的代码，例如`path`和`test.txt`
-- 事实上这题我运行出来的结果是 1834 。但是把这个数周围的都试试最后发现答案是 ==1833== 。
+- 事实上这题我运行出来的结果是 1834 。但是把这个数周围的都试试最后发现答案是 <mark>1833</mark> 。
 
 最后得到两个flag:
 
@@ -102,9 +102,9 @@ flag{Dr4W_Us!nG_fR3E_C4D!!w0W}
 
 - 1-2题
 
-根据图片在地图搜索 `科里科气科创驿站`  ，找到 `科里科气科创驿站(科大站)` 。放大地图可以看到距离==东校区西门==更近。
+根据图片在地图搜索 `科里科气科创驿站`  ，找到 `科里科气科创驿站(科大站)` 。放大地图可以看到距离<mark>东校区西门</mark>更近。
 
-搜索引擎搜索 `科大 ACG 音乐会` 找到[视频](https://www.bilibili.com/video/BV1RZ421p77C/)发现发布时间是 *2024-05-24* 。紧接着查看该视频发布账号[中科大LEO动漫协会](https://space.bilibili.com/7021308)在2024年5月附近发布的动态发现这一条[中科大LEO动漫协会的动态](https://www.bilibili.com/opus/930934582351495204)，图片里能找到==20240519==。
+搜索引擎搜索 `科大 ACG 音乐会` 找到[视频](https://www.bilibili.com/video/BV1RZ421p77C/)发现发布时间是 *2024-05-24* 。紧接着查看该视频发布账号[中科大LEO动漫协会](https://space.bilibili.com/7021308)在2024年5月附近发布的动态发现这一条[中科大LEO动漫协会的动态](https://www.bilibili.com/opus/930934582351495204)，图片里能找到<mark>20240519</mark>。
 
 ```flag
  flag{5UB5CR1B3_T0_L30_CH4N_0N_B1L1B1L1_PLZ_1af0de951a}
@@ -112,9 +112,9 @@ flag{Dr4W_Us!nG_fR3E_C4D!!w0W}
 
 - 3-4题
 
-放大图片看见垃圾桶的`六安`，猜测拍摄地点在六安。再看图片中的跑道极具特色，进而搜索`六安 跑道`找到[这篇文章](https://www.sohu.com/a/498987928_121123834)，将文中的==中央公园==填入即可。
+放大图片看见垃圾桶的`六安`，猜测拍摄地点在六安。再看图片中的跑道极具特色，进而搜索`六安 跑道`找到[这篇文章](https://www.sohu.com/a/498987928_121123834)，将文中的<mark>中央公园</mark>填入即可。
 
-百度搜图找到图中位置应该在`三峡大坝`附近。搜索`三峡大坝 旅游攻略`找到的攻略里提到了==坛子岭==这一三字地点，根据题目提示三字汉字，先填进去发现这就是答案。
+百度搜图找到图中位置应该在`三峡大坝`附近。搜索`三峡大坝 旅游攻略`找到的攻略里提到了<mark>坛子岭</mark>这一三字地点，根据题目提示三字汉字，先填进去发现这就是答案。
 
 ```flag
  flag{D3T41LS_M4TT3R_1F_R3V3RS3_S34RCH_1S_1MP0SS1BL3_4deab4f814}
@@ -124,7 +124,7 @@ flag{Dr4W_Us!nG_fR3E_C4D!!w0W}
 
 我对动车并没有很了解。根据题目提示`有辆很标志性的……四编组动车`，搜索`四编组动车`，找到了百度百科的这篇介绍[CRH6F-A型动车组](https://baike.baidu.com/item/crh6f-a型动车组/64494821)，里面的`怀密号`与图中的四编组动车一致，可知拍摄地点在`北京市郊铁路怀柔—密云线`上，因此第6题答案为==CRH6F-A==。
 
-最后挨个找离怀密线最近的且名字为三个字的医院，找到了北京北动车运用所附近的`北京积水潭医院(新街口院区)`，因此第6题答案为==积水潭医院==。
+最后挨个找离怀密线最近的且名字为三个字的医院，找到了北京北动车运用所附近的`北京积水潭医院(新街口院区)`，因此第6题答案为<mark>积水潭医院</mark>。
 
 ```flag
 flag{1_C4NT_C0NT1NU3_TH3_5T0RY_4NYM0R3_50M30N3_PLZ_H3LP_6023e19b2c}
