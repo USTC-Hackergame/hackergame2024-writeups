@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Pixel Drawer</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>RGB Pixel Drawer</h1>
+    <input type="file" id="fileInput" accept=".bin, .rgb" />
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const fileInput = document.getElementById('fileInput');
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const arrayBuffer = e.target.result;
+                    const byteArray = new Uint8Array(arrayBuffer);
+                    drawPixels(byteArray);
+                };
+                reader.readAsArrayBuffer(file);
+            }
+        });
+
+        function drawPixels(byteArray) {
+            const width = Math.ceil(Math.sqrt(byteArray.length / 3));
+            const height = Math.ceil(byteArray.length / (3 * width));
+            canvas.width = width;
+            canvas.height = height;
+
+            for (let i = 0; i < byteArray.length; i += 3) {
+                const r = byteArray[i];
+                const g = byteArray[i + 1] || 0; // Default to 0 if not available
+                const b = byteArray[i + 2] || 0; // Default to 0 if not available
+                const x = (i / 3) % width;
+                const y = Math.floor((i / 3) / width);
+                ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+                ctx.fillRect(x, y, 1, 1);
+            }
+        }
+    </script>
+</body>
+</html>
