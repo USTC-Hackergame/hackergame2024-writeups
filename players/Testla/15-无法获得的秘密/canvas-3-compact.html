@@ -1,0 +1,67 @@
+<html>
+<body>
+    <input type="file" id="fileInput" />
+    <style>canvas { border: 1px solid black; }</style>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <script>
+        const ctx = canvas.getContext('2d');
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    drawPixels(new Uint8Array(e.target.result));
+                };
+                reader.readAsArrayBuffer(file);
+            }
+        });
+
+        function drawPixels(ba) {
+            const w = canvas.width;
+
+            // for (let i = 0; i < ba.length; i += 3) {
+            //     const r = ba[i];
+            //     const g = ba[i + 1] || 0;
+            //     const b = ba[i + 2] || 0;
+            //     const x = (i / 3) % w;
+            //     const y = Math.floor((i / 3) / w);
+            //     ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+            //     ctx.fillRect(x, y, 1, 1);
+            // }
+            // for (let i = 0; i < ba.length; i += 2) {
+            //     const m = ba[i];
+            //     const n = ba[i + 1] || 0;
+            //     const x = (i / 2) % w;
+            //     const y = Math.floor((i / 2) / w);
+            //     const r = (m >> 3 << 3) + 0x4;
+            //     const g = (((m & 0x7) << 5) | (n >> 5 << 2)) + 0x2;
+            //     const b = ((n & 0x1f) << 3) + 0x4;
+            //     ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+            //     ctx.fillRect(x, y, 1, 1);
+            // }
+            for (let i = 0; i < ba.length; i += 3) {
+                const m = ba[i];
+                const n = ba[i + 1] || 0;
+                const o = ba[i + 2] || 0;
+                const p = i / 3 * 2;
+                let x = p % w;
+                let y = Math.floor(p / w);
+                let r = ((m << 0) & 0xf0) + 0x8;
+                let g = ((m << 4) & 0xf0) + 0x8;
+                let b = ((n << 0) & 0xf0) + 0x8;
+                ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+                ctx.fillRect(x, y, 1, 1);
+                x = (p + 1) % w;
+                y = Math.floor((p + 1) / w);
+                r = ((n << 4) & 0xf0) + 0x8;
+                g = ((o << 0) & 0xf0) + 0x8;
+                b = ((o << 4) & 0xf0) + 0x8;
+                ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+                ctx.fillRect(x, y, 1, 1);
+            }
+        }
+    </script>
+</body>
+</html>
