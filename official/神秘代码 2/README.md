@@ -2,7 +2,7 @@
 
 题解作者：[erina](https://github.com/2403772980ygy)
 
-出题人、验题人、文案设计等：见 [Hackergame 2024 幕后工作人员](https://hack.lug.ustc.edu.cn/credits/)。
+出题人、验题人、文案设计等：见 [Hackergame 2024 幕后工作人员](../../credits.pdf)。
 
 ## 题目描述
 

@@ -10,6 +10,8 @@
 
 比赛时间：北京时间 2024 年 11 月 02 日 中午 12:00 ～ 11 月 09 日 中午 12:00（共七天）
 
+[比赛元数据存档](archive/)
+
 ## 目录
 
 ### 官方题解
@@ -123,7 +125,7 @@
 
 ## 其他资源
 
-[Hackergame 2024 幕后工作人员](https://hack.lug.ustc.edu.cn/credits/)
+[Hackergame 2024 幕后工作人员](./credits.pdf)
 
 [花絮](./behind-the-scenes/README.md)
 
